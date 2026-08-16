@@ -1,6 +1,12 @@
 name: MEXC Futures Scan
 on:
   workflow_dispatch:
+  push:
+    branches: ["claude/tg-channel-strategy-extract-bpXXg"]
+    paths:
+      - "scanner.py"
+      - "config.json"
+      - ".github/workflows/scan.yml"
   schedule:
     - cron: "*/5 * * * *"
 permissions:
