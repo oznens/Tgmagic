@@ -1,5 +1,25 @@
 [
   {
+    "id": "CAP_USDT:Min15:SHORT:1786906800",
+    "created_at": "2026-08-16T21:35:10+00:00",
+    "symbol": "CAP_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.0661574,
+    "ote_low": 0.066044,
+    "ote_high": 0.0662708,
+    "stop": 0.0668,
+    "target": 0.06428,
+    "rr": 2.92,
+    "last_price": 0.06604,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "SNDKSTOCK_USDT:Min15:LONG:1786884300",
     "created_at": "2026-08-16T21:15:18+00:00",
     "symbol": "SNDKSTOCK_USDT",
@@ -45,7 +65,7 @@
     "symbol": "WLFI_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.0598683,
     "ote_low": 0.0598386,
     "ote_high": 0.059898,
@@ -57,7 +77,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "H_USDT:Min15:LONG:1786900500",
@@ -85,7 +106,7 @@
     "symbol": "LTC_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 44.45825000000001,
     "ote_low": 44.4515,
     "ote_high": 44.465,
@@ -97,7 +118,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "UKOIL_USDT:Min15:LONG:1786904100",
@@ -145,7 +167,7 @@
     "symbol": "BASED_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.07998515,
     "ote_low": 0.079919,
     "ote_high": 0.0800513,
@@ -157,7 +179,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SILVER_USDT:Min15:LONG:1786905000",
@@ -207,7 +230,7 @@
     "symbol": "BICO_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.0230887,
     "ote_low": 0.023032,
     "ote_high": 0.0231454,
@@ -219,7 +242,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "SOL_USDT:Min15:SHORT:1786897800",
