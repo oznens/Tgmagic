@@ -1,5 +1,85 @@
 [
   {
+    "id": "SKYAI_USDT:Min15:SHORT:1786902300",
+    "created_at": "2026-08-16T19:40:58+00:00",
+    "symbol": "SKYAI_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.07026294999999999,
+    "ote_low": 0.07017699999999999,
+    "ote_high": 0.07034889999999999,
+    "stop": 0.07075,
+    "target": 0.06884,
+    "rr": 2.92,
+    "last_price": 0.06975,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "LONG",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "NVIDIA_USDT:Min15:LONG:1786903200",
+    "created_at": "2026-08-16T19:41:20+00:00",
+    "symbol": "NVIDIA_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 225.38844999999998,
+    "ote_low": 225.3799,
+    "ote_high": 225.397,
+    "stop": 225.34,
+    "target": 225.53,
+    "rr": 2.92,
+    "last_price": 225.38,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "CRV_USDT:Min15:LONG:1786893300",
+    "created_at": "2026-08-16T19:41:22+00:00",
+    "symbol": "CRV_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.2474245,
+    "ote_low": 0.246979,
+    "ote_high": 0.24787,
+    "stop": 0.2449,
+    "target": 0.2548,
+    "rr": 2.92,
+    "last_price": 0.2504,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "KORU_USDT:Min15:LONG:1786896000",
+    "created_at": "2026-08-16T19:41:23+00:00",
+    "symbol": "KORU_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 21.98825,
+    "ote_low": 21.9815,
+    "ote_high": 21.995,
+    "stop": 21.95,
+    "target": 22.1,
+    "rr": 2.92,
+    "last_price": 22.02,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "WLD_USDT:Min15:LONG:1786883400",
     "created_at": "2026-08-16T19:25:46+00:00",
     "symbol": "WLD_USDT",
