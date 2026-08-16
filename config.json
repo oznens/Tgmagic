@@ -1,0 +1,13 @@
+{
+  "interval": "Min15",
+  "confirmation_intervals": [
+    "Min60",
+    "Hour4"
+  ],
+  "max_symbols": 80,
+  "min_volume24": 100000,
+  "scan_near_ote_percent": 0.35,
+  "pivot_left": 3,
+  "pivot_right": 3,
+  "max_signals": 200
+}
