@@ -1,5 +1,85 @@
 [
   {
+    "id": "BTC_USDT:Min15:LONG:1786889700",
+    "created_at": "2026-08-16T17:26:30+00:00",
+    "symbol": "BTC_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 63117.07,
+    "ote_low": 63102.04,
+    "ote_high": 63132.1,
+    "stop": 63031.9,
+    "target": 63365.9,
+    "rr": 2.92,
+    "last_price": 63192.0,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "ETH_USDT:Min15:LONG:1786894200",
+    "created_at": "2026-08-16T17:26:30+00:00",
+    "symbol": "ETH_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 1883.8957500000001,
+    "ote_low": 1883.4165,
+    "ote_high": 1884.375,
+    "stop": 1881.18,
+    "target": 1891.83,
+    "rr": 2.92,
+    "last_price": 1887.23,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
+    "id": "WLFI_USDT:Min15:LONG:1786871700",
+    "created_at": "2026-08-16T17:26:48+00:00",
+    "symbol": "WLFI_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.059515200000000004,
+    "ote_low": 0.0592884,
+    "ote_high": 0.059742,
+    "stop": 0.05823,
+    "target": 0.06327,
+    "rr": 2.92,
+    "last_price": 0.05972,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "XLM_USDT:Min15:LONG:1786887000",
+    "created_at": "2026-08-16T17:27:00+00:00",
+    "symbol": "XLM_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.1574844,
+    "ote_low": 0.1573548,
+    "ote_high": 0.157614,
+    "stop": 0.15675,
+    "target": 0.15963,
+    "rr": 2.92,
+    "last_price": 0.15857,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "DOGE_USDT:Min15:LONG:1786894200",
     "created_at": "2026-08-16T17:03:10+00:00",
     "symbol": "DOGE_USDT",
