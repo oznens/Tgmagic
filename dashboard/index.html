@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MEXC OTE Sinyal Paneli</title>
+<style>
+:root{color-scheme:dark;--bg:#08101e;--card:#111c31;--muted:#91a1b8;--green:#36d399;--red:#fb7185;--blue:#60a5fa}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#142341,var(--bg) 35%);font:15px system-ui;color:#edf3ff}
+main{max-width:1180px;margin:auto;padding:28px 18px}.top{display:flex;justify-content:space-between;gap:20px;align-items:end;flex-wrap:wrap}
+h1{margin:0;font-size:clamp(26px,5vw,42px)}.sub,.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:25px 0}
+.card{background:#111c31cc;border:1px solid #263651;border-radius:16px;padding:18px;box-shadow:0 12px 40px #0004}
+.num{font-size:27px;font-weight:800;margin-top:8px}table{width:100%;border-collapse:collapse}.table{overflow:auto;padding:0}
+th,td{text-align:left;padding:14px;border-bottom:1px solid #24334c;white-space:nowrap}th{color:#9fb0c7;font-size:12px;text-transform:uppercase}
+.long,.target{color:var(--green)}.short,.stop{color:var(--red)}.pending{color:var(--blue)}
+.badge{font-weight:800}.filters{display:flex;gap:10px;margin:15px 0}.filters button{background:#182641;color:#dbe8ff;border:1px solid #304260;border-radius:9px;padding:9px 13px;cursor:pointer}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body><main>
+<div class="top"><div><h1>MEXC OTE Futures</h1><div class="sub">BOS/CHoCH · Swing yapısı · OTE 0.70–0.79</div></div><div id="updated" class="muted">Yükleniyor…</div></div>
+<section class="stats">
+<div class="card"><div class="muted">Toplam sinyal</div><div class="num" id="total">—</div></div>
+<div class="card"><div class="muted">Bekleyen</div><div class="num pending" id="waiting">—</div></div>
+<div class="card"><div class="muted">Başarılı</div><div class="num target" id="wins">—</div></div>
+<div class="card"><div class="muted">Toplam R</div><div class="num" id="r">—</div></div>
+</section>
+<div class="filters"><button onclick="show('ALL')">Tümü</button><button onclick="show('PENDING')">Bekleyen</button><button onclick="show('TARGET')">Hedef</button><button onclick="show('STOP')">Stop</button></div>
+<section class="card table"><table><thead><tr><th>Tarih</th><th>Parite</th><th>Yön</th><th>Periyot</th><th>OTE giriş</th><th>Stop</th><th>Hedef</th><th>R/R</th><th>Durum</th></tr></thead><tbody id="rows"></tbody></table></section>
+<p class="muted">Yalnızca araştırma ve test amaçlıdır; finansal tavsiye değildir. Sistem emir açmaz.</p>
+</main><script>
+let signals=[];const fmt=n=>Number(n).toLocaleString('tr-TR',{maximumSignificantDigits:8});
+function status(s){return s==='TARGET'?'Hedef':s==='STOP'?'Stop':'Bekleyen'}
+function show(filter){const list=filter==='ALL'?signals:signals.filter(x=>x.status===filter);document.querySelector('#rows').innerHTML=list.map(x=>`<tr><td>${new Date(x.created_at).toLocaleString('tr-TR')}</td><td><b>${x.symbol}</b></td><td class="${x.direction.toLowerCase()} badge">${x.direction}</td><td>${x.interval}</td><td>${fmt(x.ote_low)} – ${fmt(x.ote_high)}</td><td>${fmt(x.stop)}</td><td>${fmt(x.target)}</td><td>${x.rr}R</td><td class="${x.status.toLowerCase()} badge">${status(x.status)}</td></tr>`).join('')||'<tr><td colspan="9">Henüz sinyal yok.</td></tr>'}
+fetch('../data/signals.json?'+Date.now()).then(r=>r.json()).then(data=>{signals=data;let done=data.filter(x=>x.status!=='PENDING'),wins=done.filter(x=>x.status==='TARGET').length,totalR=done.reduce((a,x)=>a+(x.result_r||0),0);total.textContent=data.length;waiting.textContent=data.filter(x=>x.status==='PENDING').length;document.querySelector('#wins').textContent=done.length?Math.round(wins/done.length*100)+'%':'—';document.querySelector('#r').textContent=(totalR>=0?'+':'')+totalR.toFixed(2)+'R';updated.textContent='Son güncelleme: '+new Date().toLocaleString('tr-TR');show('ALL')}).catch(()=>updated.textContent='Veri yüklenemedi');
+</script></body></html>
