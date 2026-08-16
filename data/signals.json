@@ -1,5 +1,65 @@
 [
   {
+    "id": "WLD_USDT:Min15:LONG:1786883400",
+    "created_at": "2026-08-16T19:25:46+00:00",
+    "symbol": "WLD_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.3497185,
+    "ote_low": 0.348427,
+    "ote_high": 0.35101,
+    "stop": 0.3424,
+    "target": 0.3711,
+    "rr": 2.92,
+    "last_price": 0.3609,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "MUSTOCK_USDT:Min15:LONG:1786888800",
+    "created_at": "2026-08-16T19:25:49+00:00",
+    "symbol": "MUSTOCK_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 977.2699,
+    "ote_low": 977.0458,
+    "ote_high": 977.494,
+    "stop": 976.0,
+    "target": 980.98,
+    "rr": 2.92,
+    "last_price": 978.72,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
+    "id": "FARTCOIN_USDT:Min15:LONG:1786888800",
+    "created_at": "2026-08-16T19:26:00+00:00",
+    "symbol": "FARTCOIN_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.142961,
+    "ote_low": 0.14277199999999998,
+    "ote_high": 0.14315,
+    "stop": 0.14189,
+    "target": 0.14609,
+    "rr": 2.92,
+    "last_price": 0.14453,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "SHORT",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "HYPE_USDT:Min15:LONG:1786888800",
     "created_at": "2026-08-16T19:02:08+00:00",
     "symbol": "HYPE_USDT",
@@ -45,7 +105,7 @@
     "symbol": "LDO_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.306871,
     "ote_low": 0.306682,
     "ote_high": 0.30706,
@@ -57,7 +117,8 @@
       "Min15": "LONG",
       "Min60": "NEUTRAL",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "ZEC_USDT:Min15:LONG:1786882500",
@@ -452,7 +513,7 @@
     "symbol": "SHIB_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 4.475199999999999e-06,
     "ote_low": 4.473399999999999e-06,
     "ote_high": 4.477e-06,
@@ -464,7 +525,8 @@
       "Min15": "LONG",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "CHIP_USDT:Min15:LONG:1786883400",
