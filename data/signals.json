@@ -1,5 +1,85 @@
 [
   {
+    "id": "ONDO_USDT:Min15:LONG:1786883400",
+    "created_at": "2026-08-16T17:54:40+00:00",
+    "symbol": "ONDO_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.3273675,
+    "ote_low": 0.32698499999999997,
+    "ote_high": 0.32775,
+    "stop": 0.3252,
+    "target": 0.3337,
+    "rr": 2.92,
+    "last_price": 0.3307,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "AIO_USDT:Min15:LONG:1786891500",
+    "created_at": "2026-08-16T17:54:43+00:00",
+    "symbol": "AIO_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.06615755,
+    "ote_low": 0.0655721,
+    "ote_high": 0.066743,
+    "stop": 0.06284,
+    "target": 0.07585,
+    "rr": 2.92,
+    "last_price": 0.0712,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "BLESS_USDT:Min15:SHORT:1786896900",
+    "created_at": "2026-08-16T17:54:51+00:00",
+    "symbol": "BLESS_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.009064385000000001,
+    "ote_low": 0.0090431,
+    "ote_high": 0.00908567,
+    "stop": 0.009185,
+    "target": 0.008712,
+    "rr": 2.92,
+    "last_price": 0.008884,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "NEUTRAL",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "TESLA_USDT:Min15:SHORT:1786893300",
+    "created_at": "2026-08-16T17:54:56+00:00",
+    "symbol": "TESLA_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 342.9121,
+    "ote_low": 342.886,
+    "ote_high": 342.9382,
+    "stop": 343.06,
+    "target": 342.48,
+    "rr": 2.92,
+    "last_price": 342.8,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "BTC_USDT:Min15:LONG:1786889700",
     "created_at": "2026-08-16T17:26:30+00:00",
     "symbol": "BTC_USDT",
@@ -85,7 +165,7 @@
     "symbol": "DOGE_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.07000845,
     "ote_low": 0.06999989999999999,
     "ote_high": 0.070017,
@@ -97,7 +177,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "DOT_USDT:Min15:LONG:1786887000",
@@ -327,7 +408,7 @@
     "symbol": "ENA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.08373030000000001,
     "ote_low": 0.08368260000000001,
     "ote_high": 0.083778,
@@ -339,7 +420,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "PORTAL_USDT:Min15:LONG:1786877100",
