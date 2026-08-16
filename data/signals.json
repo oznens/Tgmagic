@@ -1,5 +1,65 @@
 [
   {
+    "id": "SILVER_USDT:Min15:LONG:1786905000",
+    "created_at": "2026-08-16T20:43:30+00:00",
+    "symbol": "SILVER_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 65.01060000000001,
+    "ote_low": 65.0052,
+    "ote_high": 65.016,
+    "stop": 64.98,
+    "target": 65.1,
+    "rr": 2.92,
+    "last_price": 64.87,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "FARTCOIN_USDT:Min15:LONG:1786905000",
+    "created_at": "2026-08-16T20:43:33+00:00",
+    "symbol": "FARTCOIN_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.1446577,
+    "ote_low": 0.1445434,
+    "ote_high": 0.144772,
+    "stop": 0.14401,
+    "target": 0.14655,
+    "rr": 2.92,
+    "last_price": 0.14473,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "SHORT",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "BICO_USDT:Min15:SHORT:1786902300",
+    "created_at": "2026-08-16T20:43:41+00:00",
+    "symbol": "BICO_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.0230887,
+    "ote_low": 0.023032,
+    "ote_high": 0.0231454,
+    "stop": 0.02341,
+    "target": 0.02215,
+    "rr": 2.92,
+    "last_price": 0.0227,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "NEUTRAL",
+      "Hour4": "SHORT"
+    }
+  },
+  {
     "id": "SOL_USDT:Min15:SHORT:1786897800",
     "created_at": "2026-08-16T20:22:37+00:00",
     "symbol": "SOL_USDT",
@@ -881,7 +941,7 @@
     "symbol": "XMR_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 412.385,
     "ote_low": 411.97999999999996,
     "ote_high": 412.78999999999996,
@@ -893,7 +953,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "SPORTFUN_USDT:Min15:SHORT:1786890600",
