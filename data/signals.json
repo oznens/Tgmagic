@@ -1,5 +1,25 @@
 [
   {
+    "id": "ZEC_USDT:Min15:LONG:1786882500",
+    "created_at": "2026-08-16T18:44:01+00:00",
+    "symbol": "ZEC_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 487.0625,
+    "ote_low": 486.545,
+    "ote_high": 487.58,
+    "stop": 484.13,
+    "target": 495.63,
+    "rr": 2.92,
+    "last_price": 490.94,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "ETHFI_USDT:Min15:LONG:1786884300",
     "created_at": "2026-08-16T18:08:40+00:00",
     "symbol": "ETHFI_USDT",
@@ -226,7 +246,7 @@
     "symbol": "DOT_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.7625890000000001,
     "ote_low": 0.7622380000000001,
     "ote_high": 0.7629400000000001,
@@ -238,7 +258,8 @@
       "Min15": "LONG",
       "Min60": "NEUTRAL",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "UNI_USDT:Min15:LONG:1786885200",
@@ -266,7 +287,7 @@
     "symbol": "DOGE_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.06991354999999999,
     "ote_low": 0.0699041,
     "ote_high": 0.069923,
@@ -278,7 +299,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "AVAX_USDT:Min15:LONG:1786880700",
@@ -286,7 +308,7 @@
     "symbol": "AVAX_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 6.368930000000001,
     "ote_low": 6.365060000000001,
     "ote_high": 6.372800000000001,
@@ -298,7 +320,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "SKYAI_USDT:Min15:SHORT:1786879800",
@@ -470,7 +493,7 @@
     "symbol": "PORTAL_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.0129934,
     "ote_low": 0.0127828,
     "ote_high": 0.013204,
@@ -482,7 +505,8 @@
       "Min15": "LONG",
       "Min60": "NEUTRAL",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "BICO_USDT:Min15:LONG:1786882500",
