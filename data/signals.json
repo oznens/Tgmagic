@@ -1,5 +1,65 @@
 [
   {
+    "id": "HYPE_USDT:Min15:LONG:1786888800",
+    "created_at": "2026-08-16T19:02:08+00:00",
+    "symbol": "HYPE_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 57.299235,
+    "ote_low": 57.25437,
+    "ote_high": 57.344100000000005,
+    "stop": 57.045,
+    "target": 58.042,
+    "rr": 2.92,
+    "last_price": 57.64,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "BASED_USDT:Min15:SHORT:1786888800",
+    "created_at": "2026-08-16T19:02:38+00:00",
+    "symbol": "BASED_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.08181855,
+    "ote_low": 0.081513,
+    "ote_high": 0.0821241,
+    "stop": 0.08355,
+    "target": 0.07676,
+    "rr": 2.92,
+    "last_price": 0.07956,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
+    "id": "LDO_USDT:Min15:LONG:1786897800",
+    "created_at": "2026-08-16T19:02:47+00:00",
+    "symbol": "LDO_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.306871,
+    "ote_low": 0.306682,
+    "ote_high": 0.30706,
+    "stop": 0.3058,
+    "target": 0.31,
+    "rr": 2.92,
+    "last_price": 0.3054,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "NEUTRAL",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "ZEC_USDT:Min15:LONG:1786882500",
     "created_at": "2026-08-16T18:44:01+00:00",
     "symbol": "ZEC_USDT",
@@ -45,7 +105,7 @@
     "symbol": "NVIDIA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 225.33335,
     "ote_low": 225.32569999999998,
     "ote_high": 225.341,
@@ -57,7 +117,8 @@
       "Min15": "LONG",
       "Min60": "NEUTRAL",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "ONDO_USDT:Min15:LONG:1786883400",
