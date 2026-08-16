@@ -1,5 +1,85 @@
 [
   {
+    "id": "SOL_USDT:Min15:SHORT:1786897800",
+    "created_at": "2026-08-16T20:22:37+00:00",
+    "symbol": "SOL_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 75.51894999999999,
+    "ote_low": 75.487,
+    "ote_high": 75.5509,
+    "stop": 75.7,
+    "target": 74.99,
+    "rr": 2.92,
+    "last_price": 75.24,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "NEUTRAL",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "PEPE_USDT:Min15:SHORT:1786897800",
+    "created_at": "2026-08-16T20:22:40+00:00",
+    "symbol": "PEPE_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 2.613862e-06,
+    "ote_low": 2.61172e-06,
+    "ote_high": 2.616004e-06,
+    "stop": 2.626e-06,
+    "target": 2.5784e-06,
+    "rr": 2.92,
+    "last_price": 2.5957e-06,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "SPX500_USDT:Min15:LONG:1786906800",
+    "created_at": "2026-08-16T20:22:48+00:00",
+    "symbol": "SPX500_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 7783.925,
+    "ote_low": 7783.25,
+    "ote_high": 7784.6,
+    "stop": 7780.1,
+    "target": 7795.1,
+    "rr": 2.92,
+    "last_price": 7783.4,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "USOIL_USDT:Min15:LONG:1786896900",
+    "created_at": "2026-08-16T20:22:56+00:00",
+    "symbol": "USOIL_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 81.2226,
+    "ote_low": 81.1992,
+    "ote_high": 81.24600000000001,
+    "stop": 81.09,
+    "target": 81.61,
+    "rr": 2.92,
+    "last_price": 81.39,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "APR_USDT:Min15:LONG:1786901400",
     "created_at": "2026-08-16T20:00:38+00:00",
     "symbol": "APR_USDT",
