@@ -1,5 +1,25 @@
 [
   {
+    "id": "BTW_USDT:Min15:LONG:1786914000",
+    "created_at": "2026-08-16T22:40:09+00:00",
+    "symbol": "BTW_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.38186535,
+    "ote_low": 0.3803097,
+    "ote_high": 0.383421,
+    "stop": 0.37305,
+    "target": 0.40762,
+    "rr": 2.92,
+    "last_price": 0.37657,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "BTC_USDT:Min15:SHORT:1786908600",
     "created_at": "2026-08-16T22:17:52+00:00",
     "symbol": "BTC_USDT",
@@ -185,7 +205,7 @@
     "symbol": "CRV_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.2509865,
     "ote_low": 0.250883,
     "ote_high": 0.25109,
@@ -197,7 +217,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "CAP_USDT:Min15:SHORT:1786906800",
@@ -577,7 +598,7 @@
     "symbol": "PORTAL_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.0143368,
     "ote_low": 0.0140956,
     "ote_high": 0.014578,
@@ -589,7 +610,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SKYAI_USDT:Min15:SHORT:1786902300",
