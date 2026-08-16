@@ -1,5 +1,25 @@
 [
   {
+    "id": "PORTAL_USDT:Min15:LONG:1786896900",
+    "created_at": "2026-08-16T19:52:40+00:00",
+    "symbol": "PORTAL_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.0143368,
+    "ote_low": 0.0140956,
+    "ote_high": 0.014578,
+    "stop": 0.01297,
+    "target": 0.01833,
+    "rr": 2.92,
+    "last_price": 0.01628,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "SKYAI_USDT:Min15:SHORT:1786902300",
     "created_at": "2026-08-16T19:40:58+00:00",
     "symbol": "SKYAI_USDT",
@@ -125,7 +145,7 @@
     "symbol": "FARTCOIN_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.142961,
     "ote_low": 0.14277199999999998,
     "ote_high": 0.14315,
@@ -137,7 +157,8 @@
       "Min15": "LONG",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "HYPE_USDT:Min15:LONG:1786888800",
@@ -327,7 +348,7 @@
     "symbol": "TESLA_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 342.9121,
     "ote_low": 342.886,
     "ote_high": 342.9382,
@@ -339,7 +360,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "BTC_USDT:Min15:LONG:1786889700",
