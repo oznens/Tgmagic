@@ -1,5 +1,25 @@
 [
   {
+    "id": "USOIL_USDT:Min15:LONG:1787002200",
+    "created_at": "2026-08-17T22:57:06+00:00",
+    "symbol": "USOIL_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 84.00575,
+    "ote_low": 83.9765,
+    "ote_high": 84.035,
+    "stop": 83.84,
+    "target": 84.49,
+    "rr": 2.92,
+    "last_price": 84.24,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "FARTCOIN_USDT:Min15:LONG:1786997700",
     "created_at": "2026-08-17T22:39:57+00:00",
     "symbol": "FARTCOIN_USDT",
@@ -45,7 +65,7 @@
     "symbol": "CHIP_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.0283424,
     "ote_low": 0.0283208,
     "ote_high": 0.028364,
@@ -57,7 +77,8 @@
       "Min15": "LONG",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "NAS100_USDT:Min15:SHORT:1786992300",
@@ -880,7 +901,7 @@
     "symbol": "ENA_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.08371319999999999,
     "ote_low": 0.08365199999999999,
     "ote_high": 0.0837744,
@@ -892,7 +913,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "PENGU_USDT:Min15:SHORT:1786981500",
@@ -2546,7 +2568,7 @@
     "symbol": "SUI_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.678564,
     "ote_low": 0.67824,
     "ote_high": 0.678888,
@@ -2558,7 +2580,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "AVAX_USDT:Min15:SHORT:1786949100",
@@ -4133,26 +4156,5 @@
       "Hour4": "NEUTRAL"
     },
     "result_r": -1
-  },
-  {
-    "id": "LINK_USDT:Min15:LONG:1786925700",
-    "created_at": "2026-08-17T02:10:46+00:00",
-    "symbol": "LINK_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 9.405255,
-    "ote_low": 9.39621,
-    "ote_high": 9.414299999999999,
-    "stop": 9.354,
-    "target": 9.555,
-    "rr": 2.92,
-    "last_price": 9.484,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": 2.92
   }
 ]
