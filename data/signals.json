@@ -1,5 +1,65 @@
 [
   {
+    "id": "XAU_USDT:Min15:LONG:1786923000",
+    "created_at": "2026-08-17T04:39:22+00:00",
+    "symbol": "XAU_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 4384.38155,
+    "ote_low": 4382.2301,
+    "ote_high": 4386.532999999999,
+    "stop": 4372.19,
+    "target": 4420.0,
+    "rr": 2.92,
+    "last_price": 4396.15,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "NEUTRAL",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "WLD_USDT:Min15:LONG:1786925700",
+    "created_at": "2026-08-17T04:39:29+00:00",
+    "symbol": "WLD_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.3582035,
+    "ote_low": 0.357497,
+    "ote_high": 0.35891,
+    "stop": 0.3542,
+    "target": 0.3699,
+    "rr": 2.92,
+    "last_price": 0.3641,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "ICP_USDT:Min15:SHORT:1786934700",
+    "created_at": "2026-08-17T04:40:02+00:00",
+    "symbol": "ICP_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 2.26941,
+    "ote_low": 2.2686,
+    "ote_high": 2.27022,
+    "stop": 2.274,
+    "target": 2.256,
+    "rr": 2.92,
+    "last_price": 2.269,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "LINK_USDT:Min15:LONG:1786932900",
     "created_at": "2026-08-17T03:59:17+00:00",
     "symbol": "LINK_USDT",
@@ -185,7 +245,7 @@
     "symbol": "ETHFI_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.503495,
     "ote_low": 0.5030899999999999,
     "ote_high": 0.5039,
@@ -197,7 +257,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "FET_USDT:Min15:SHORT:1786909500",
@@ -680,7 +741,7 @@
     "symbol": "INJ_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 4.11838,
     "ote_low": 4.1128,
     "ote_high": 4.12396,
@@ -692,7 +753,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "BNB_USDT:Min15:SHORT:1786908600",
@@ -2178,7 +2240,7 @@
     "symbol": "SKYAI_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.07263245,
     "ote_low": 0.072227,
     "ote_high": 0.0730379,
@@ -2190,7 +2252,8 @@
       "Min15": "SHORT",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "SILVER_USDT:Min15:SHORT:1786891500",
