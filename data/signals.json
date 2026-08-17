@@ -1,5 +1,45 @@
 [
   {
+    "id": "ENA_USDT:Min15:SHORT:1786977900",
+    "created_at": "2026-08-17T18:05:00+00:00",
+    "symbol": "ENA_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.08371319999999999,
+    "ote_low": 0.08365199999999999,
+    "ote_high": 0.0837744,
+    "stop": 0.08406,
+    "target": 0.0827,
+    "rr": 2.92,
+    "last_price": 0.08337,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "NEUTRAL",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "PENGU_USDT:Min15:SHORT:1786981500",
+    "created_at": "2026-08-17T18:05:11+00:00",
+    "symbol": "PENGU_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.00598491,
+    "ote_low": 0.005979600000000001,
+    "ote_high": 0.00599022,
+    "stop": 0.006015,
+    "target": 0.005897,
+    "rr": 2.92,
+    "last_price": 0.005946,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "NEUTRAL",
+      "Hour4": "SHORT"
+    }
+  },
+  {
     "id": "LINK_USDT:Min15:LONG:1786982400",
     "created_at": "2026-08-17T17:46:07+00:00",
     "symbol": "LINK_USDT",
@@ -559,7 +599,7 @@
     "symbol": "CAP_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.0651963,
     "ote_low": 0.0650046,
     "ote_high": 0.065388,
@@ -571,7 +611,8 @@
       "Min15": "LONG",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "GOOGLSTOCK_USDT:Min15:SHORT:1786972500",
@@ -4123,47 +4164,5 @@
       "Min60": "SHORT",
       "Hour4": "SHORT"
     }
-  },
-  {
-    "id": "SHIB_USDT:Min15:SHORT:1786908600",
-    "created_at": "2026-08-16T22:18:23+00:00",
-    "symbol": "SHIB_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 4.4511850000000005e-06,
-    "ote_low": 4.4461000000000005e-06,
-    "ote_high": 4.4562700000000004e-06,
-    "stop": 4.48e-06,
-    "target": 4.367e-06,
-    "rr": 2.92,
-    "last_price": 4.415e-06,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "OP_USDT:Min15:SHORT:1786911300",
-    "created_at": "2026-08-16T22:18:31+00:00",
-    "symbol": "OP_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 0.0837115,
-    "ote_low": 0.08359,
-    "ote_high": 0.083833,
-    "stop": 0.0844,
-    "target": 0.0817,
-    "rr": 2.92,
-    "last_price": 0.0832,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "LONG",
-      "Hour4": "SHORT"
-    },
-    "result_r": -1
   }
 ]
