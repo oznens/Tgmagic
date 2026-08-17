@@ -45,7 +45,7 @@
     "symbol": "ACE_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.1830483,
     "ote_low": 0.18229859999999998,
     "ote_high": 0.183798,
@@ -57,7 +57,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "DOT_USDT:Min15:SHORT:1786973400",
@@ -85,7 +86,7 @@
     "symbol": "BNB_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 607.0395,
     "ote_low": 606.909,
     "ote_high": 607.17,
@@ -97,7 +98,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "APT_USDT:Min15:SHORT:1786963500",
@@ -165,7 +167,7 @@
     "symbol": "SUI_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.677127,
     "ote_low": 0.67692,
     "ote_high": 0.677334,
@@ -177,7 +179,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "OP_USDT:Min15:SHORT:1786973400",
@@ -455,7 +458,7 @@
     "symbol": "ARB_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.0747579,
     "ote_low": 0.0747318,
     "ote_high": 0.074784,
@@ -467,7 +470,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "NIULAI_USDT:Min15:LONG:1786964400",
@@ -578,7 +582,7 @@
     "symbol": "PEPE_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 2.5873614999999997e-06,
     "ote_low": 2.58589e-06,
     "ote_high": 2.588833e-06,
@@ -590,7 +594,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "NVIDIA_USDT:Min15:LONG:1786959000",
@@ -866,7 +871,7 @@
     "symbol": "XRP_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 1.0039185,
     "ote_low": 1.00341,
     "ote_high": 1.004427,
@@ -878,7 +883,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "FILECOIN_USDT:Min15:SHORT:1786949100",
