@@ -1,5 +1,65 @@
 [
   {
+    "id": "SUI_USDT:Min15:SHORT:1787004000",
+    "created_at": "2026-08-17T23:53:48+00:00",
+    "symbol": "SUI_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.675719,
+    "ote_low": 0.67544,
+    "ote_high": 0.675998,
+    "stop": 0.6773,
+    "target": 0.6711,
+    "rr": 2.92,
+    "last_price": 0.6751,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "UNI_USDT:Min15:SHORT:1787004000",
+    "created_at": "2026-08-17T23:54:06+00:00",
+    "symbol": "UNI_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 3.28288,
+    "ote_low": 3.2818,
+    "ote_high": 3.28396,
+    "stop": 3.289,
+    "target": 3.265,
+    "rr": 2.92,
+    "last_price": 3.28,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
+    "id": "GOOGLSTOCK_USDT:Min15:SHORT:1787003100",
+    "created_at": "2026-08-17T23:54:20+00:00",
+    "symbol": "GOOGLSTOCK_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 344.2433,
+    "ote_low": 344.228,
+    "ote_high": 344.2586,
+    "stop": 344.33,
+    "target": 343.99,
+    "rr": 2.92,
+    "last_price": 344.15,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "TAO_USDT:Min15:SHORT:1787002200",
     "created_at": "2026-08-17T23:37:14+00:00",
     "symbol": "TAO_USDT",
@@ -4092,69 +4152,6 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    },
-    "result_r": 2.92
-  },
-  {
-    "id": "ZEC_USDT:Min15:LONG:1786932000",
-    "created_at": "2026-08-17T03:59:20+00:00",
-    "symbol": "ZEC_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 490.3713,
-    "ote_low": 490.1346,
-    "ote_high": 490.608,
-    "stop": 489.03,
-    "target": 494.29,
-    "rr": 2.92,
-    "last_price": 491.62,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": 2.92
-  },
-  {
-    "id": "TAO_USDT:Min15:LONG:1786932000",
-    "created_at": "2026-08-17T03:59:25+00:00",
-    "symbol": "TAO_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 196.5885,
-    "ote_low": 196.467,
-    "ote_high": 196.71,
-    "stop": 195.9,
-    "target": 198.6,
-    "rr": 2.92,
-    "last_price": 196.92,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "DOT_USDT:Min15:LONG:1786932900",
-    "created_at": "2026-08-17T03:59:29+00:00",
-    "symbol": "DOT_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 0.7628985,
-    "ote_low": 0.762687,
-    "ote_high": 0.7631100000000001,
-    "stop": 0.7617,
-    "target": 0.7664,
-    "rr": 2.92,
-    "last_price": 0.7637,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
     },
     "result_r": 2.92
   }
