@@ -1,5 +1,85 @@
 [
   {
+    "id": "USOIL_USDT:Min15:LONG:1786928400",
+    "created_at": "2026-08-17T05:19:58+00:00",
+    "symbol": "USOIL_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 81.27385000000001,
+    "ote_low": 81.2167,
+    "ote_high": 81.331,
+    "stop": 80.95,
+    "target": 82.22,
+    "rr": 2.92,
+    "last_price": 81.4,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
+    "id": "HEMI_USDT:Min15:LONG:1786927500",
+    "created_at": "2026-08-17T05:20:11+00:00",
+    "symbol": "HEMI_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.0062213649999999995,
+    "ote_low": 0.00618883,
+    "ote_high": 0.0062539,
+    "stop": 0.006037,
+    "target": 0.00676,
+    "rr": 2.92,
+    "last_price": 0.00649,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "NEUTRAL",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "NIL_USDT:Min15:LONG:1786939200",
+    "created_at": "2026-08-17T05:20:24+00:00",
+    "symbol": "NIL_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.04957325,
+    "ote_low": 0.0494315,
+    "ote_high": 0.049715,
+    "stop": 0.04877,
+    "target": 0.05192,
+    "rr": 2.92,
+    "last_price": 0.04856,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "BASED_USDT:Min15:LONG:1786932900",
+    "created_at": "2026-08-17T05:20:25+00:00",
+    "symbol": "BASED_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.07818530000000001,
+    "ote_low": 0.07809260000000001,
+    "ote_high": 0.078278,
+    "stop": 0.07766,
+    "target": 0.07972,
+    "rr": 2.92,
+    "last_price": 0.07845,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "NEUTRAL",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "XAU_USDT:Min15:LONG:1786923000",
     "created_at": "2026-08-17T04:39:22+00:00",
     "symbol": "XAU_USDT",
@@ -45,7 +125,7 @@
     "symbol": "ICP_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 2.26941,
     "ote_low": 2.2686,
     "ote_high": 2.27022,
@@ -57,7 +137,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "LINK_USDT:Min15:LONG:1786932900",
@@ -65,7 +146,7 @@
     "symbol": "LINK_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 9.473835000000001,
     "ote_low": 9.468570000000001,
     "ote_high": 9.4791,
@@ -77,7 +158,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "XAUT_USDT:Min15:LONG:1786923000",
@@ -145,7 +227,7 @@
     "symbol": "DOT_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.7628985,
     "ote_low": 0.762687,
     "ote_high": 0.7631100000000001,
@@ -157,7 +239,8 @@
       "Min15": "LONG",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "FARTCOIN_USDT:Min15:LONG:1786932900",
@@ -286,7 +369,7 @@
     "symbol": "BICO_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.0228428,
     "ote_low": 0.022778,
     "ote_high": 0.0229076,
@@ -298,7 +381,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "ICP_USDT:Min15:SHORT:1786911300",
@@ -306,7 +390,7 @@
     "symbol": "ICP_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 2.2617399999999996,
     "ote_low": 2.2594,
     "ote_high": 2.26408,
@@ -318,7 +402,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "LINK_USDT:Min15:LONG:1786925700",
