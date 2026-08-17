@@ -1,5 +1,25 @@
 [
   {
+    "id": "ALLO_USDT:Min15:LONG:1786988700",
+    "created_at": "2026-08-17T21:56:23+00:00",
+    "symbol": "ALLO_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.28537864999999996,
+    "ote_low": 0.2840183,
+    "ote_high": 0.28673899999999997,
+    "stop": 0.27767,
+    "target": 0.3079,
+    "rr": 2.92,
+    "last_price": 0.29499,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "XRP_USDT:Min15:LONG:1786997700",
     "created_at": "2026-08-17T21:38:10+00:00",
     "symbol": "XRP_USDT",
@@ -145,7 +165,7 @@
     "symbol": "APT_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.5296415,
     "ote_low": 0.529493,
     "ote_high": 0.52979,
@@ -157,7 +177,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "WLD_USDT:Min15:SHORT:1786994100",
@@ -4127,27 +4148,6 @@
       "Min15": "SHORT",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    },
-    "result_r": 2.92
-  },
-  {
-    "id": "TUT_USDT:Min15:LONG:1786922100",
-    "created_at": "2026-08-17T02:11:16+00:00",
-    "symbol": "TUT_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 0.0339375,
-    "ote_low": 0.033825,
-    "ote_high": 0.034050000000000004,
-    "stop": 0.0333,
-    "target": 0.0358,
-    "rr": 2.92,
-    "last_price": 0.03437,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "NEUTRAL"
     },
     "result_r": 2.92
   }
