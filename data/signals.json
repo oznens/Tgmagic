@@ -1,5 +1,85 @@
 [
   {
+    "id": "TAO_USDT:Min15:SHORT:1787002200",
+    "created_at": "2026-08-17T23:37:14+00:00",
+    "symbol": "TAO_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 196.493,
+    "ote_low": 196.42999999999998,
+    "ote_high": 196.55599999999998,
+    "stop": 196.85,
+    "target": 195.45,
+    "rr": 2.92,
+    "last_price": 196.07,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "LONG",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "KORU_USDT:Min15:LONG:1786995900",
+    "created_at": "2026-08-17T23:37:20+00:00",
+    "symbol": "KORU_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 23.48775,
+    "ote_low": 23.4405,
+    "ote_high": 23.535,
+    "stop": 23.22,
+    "target": 24.27,
+    "rr": 2.92,
+    "last_price": 23.75,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "INJ_USDT:Min15:SHORT:1786995000",
+    "created_at": "2026-08-17T23:37:27+00:00",
+    "symbol": "INJ_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 4.108029999999999,
+    "ote_low": 4.1038,
+    "ote_high": 4.11226,
+    "stop": 4.132,
+    "target": 4.038,
+    "rr": 2.92,
+    "last_price": 4.073,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "LTC_USDT:Min15:SHORT:1787003100",
+    "created_at": "2026-08-17T23:37:35+00:00",
+    "symbol": "LTC_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 44.53645,
+    "ote_low": 44.527,
+    "ote_high": 44.5459,
+    "stop": 44.59,
+    "target": 44.38,
+    "rr": 2.92,
+    "last_price": 44.47,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "UKOIL_USDT:Min15:LONG:1787002200",
     "created_at": "2026-08-17T23:15:54+00:00",
     "symbol": "UKOIL_USDT",
@@ -45,7 +125,7 @@
     "symbol": "SAMSUNGSTOCK_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 199.98775,
     "ote_low": 199.8505,
     "ote_high": 200.125,
@@ -57,7 +137,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "XMR_USDT:Min15:SHORT:1786994100",
@@ -65,7 +146,7 @@
     "symbol": "XMR_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 413.03275,
     "ote_low": 412.855,
     "ote_high": 413.2105,
@@ -77,7 +158,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "USOIL_USDT:Min15:LONG:1787002200",
@@ -105,7 +187,7 @@
     "symbol": "FARTCOIN_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.14364085,
     "ote_low": 0.1435207,
     "ote_high": 0.143761,
@@ -117,7 +199,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "APT_USDT:Min15:LONG:1787001300",
@@ -309,7 +392,7 @@
     "symbol": "HYPE_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 59.046465,
     "ote_low": 59.0079,
     "ote_high": 59.08503,
@@ -321,7 +404,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "SUI_USDT:Min15:SHORT:1786990500",
@@ -1650,7 +1734,7 @@
     "symbol": "OP_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.0840195,
     "ote_low": 0.08397,
     "ote_high": 0.084069,
@@ -1662,7 +1746,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "ETHFI_USDT:Min15:SHORT:1786975200",
@@ -4072,89 +4157,5 @@
       "Hour4": "LONG"
     },
     "result_r": 2.92
-  },
-  {
-    "id": "FARTCOIN_USDT:Min15:LONG:1786932900",
-    "created_at": "2026-08-17T03:59:33+00:00",
-    "symbol": "FARTCOIN_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 0.14381205,
-    "ote_low": 0.1436811,
-    "ote_high": 0.143943,
-    "stop": 0.14307,
-    "target": 0.14598,
-    "rr": 2.92,
-    "last_price": 0.14461,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "NEUTRAL",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "SHIB_USDT:Min15:LONG:1786932000",
-    "created_at": "2026-08-17T03:59:42+00:00",
-    "symbol": "SHIB_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 4.4274749999999995e-06,
-    "ote_low": 4.42545e-06,
-    "ote_high": 4.4295e-06,
-    "stop": 4.416e-06,
-    "target": 4.461e-06,
-    "rr": 2.92,
-    "last_price": 4.439e-06,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
-    },
-    "result_r": 2.92
-  },
-  {
-    "id": "SNDKSTOCK_USDT:Min15:LONG:1786932000",
-    "created_at": "2026-08-17T03:10:35+00:00",
-    "symbol": "SNDKSTOCK_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 1696.4627500000001,
-    "ote_low": 1691.8705,
-    "ote_high": 1701.055,
-    "stop": 1670.44,
-    "target": 1772.49,
-    "rr": 2.92,
-    "last_price": 1717.61,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": 2.92
-  },
-  {
-    "id": "FILECOIN_USDT:Min15:SHORT:1786930200",
-    "created_at": "2026-08-17T03:10:50+00:00",
-    "symbol": "FILECOIN_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 0.6703615,
-    "ote_low": 0.66979,
-    "ote_high": 0.670933,
-    "stop": 0.6736,
-    "target": 0.6609,
-    "rr": 2.92,
-    "last_price": 0.6685,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "NEUTRAL",
-      "Hour4": "SHORT"
-    },
-    "result_r": -1
   }
 ]
