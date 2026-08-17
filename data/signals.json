@@ -1,5 +1,85 @@
 [
   {
+    "id": "TESLA_USDT:Min15:LONG:1786987800",
+    "created_at": "2026-08-17T20:00:08+00:00",
+    "symbol": "TESLA_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 340.92395,
+    "ote_low": 340.6409,
+    "ote_high": 341.207,
+    "stop": 339.32,
+    "target": 345.61,
+    "rr": 2.92,
+    "last_price": 339.81,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "NEUTRAL",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "AAVE_USDT:Min15:LONG:1786986000",
+    "created_at": "2026-08-17T20:00:20+00:00",
+    "symbol": "AAVE_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 87.72789999999999,
+    "ote_low": 87.70179999999999,
+    "ote_high": 87.75399999999999,
+    "stop": 87.58,
+    "target": 88.16,
+    "rr": 2.92,
+    "last_price": 87.85,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "FILECOIN_USDT:Min15:LONG:1786986000",
+    "created_at": "2026-08-17T20:00:25+00:00",
+    "symbol": "FILECOIN_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.667834,
+    "ote_low": 0.667528,
+    "ote_high": 0.6681400000000001,
+    "stop": 0.6661,
+    "target": 0.6729,
+    "rr": 2.92,
+    "last_price": 0.6696,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "SKYAI_USDT:Min15:LONG:1786983300",
+    "created_at": "2026-08-17T20:00:31+00:00",
+    "symbol": "SKYAI_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.0721572,
+    "ote_low": 0.0720024,
+    "ote_high": 0.072312,
+    "stop": 0.07128,
+    "target": 0.07472,
+    "rr": 2.92,
+    "last_price": 0.07348,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "SHIB_USDT:Min15:LONG:1786983300",
     "created_at": "2026-08-17T19:45:18+00:00",
     "symbol": "SHIB_USDT",
@@ -4069,90 +4149,6 @@
     "bias": {
       "Min15": "SHORT",
       "Min60": "SHORT",
-      "Hour4": "SHORT"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "SKHYNIXSTOCK_USDT:Min15:SHORT:1786878000",
-    "created_at": "2026-08-16T23:07:51+00:00",
-    "symbol": "SKHYNIXSTOCK_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 1178.2458000000001,
-    "ote_low": 1177.848,
-    "ote_high": 1178.6436,
-    "stop": 1180.5,
-    "target": 1171.66,
-    "rr": 2.92,
-    "last_price": 1175.04,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "SUI_USDT:Min15:SHORT:1786908600",
-    "created_at": "2026-08-16T23:07:52+00:00",
-    "symbol": "SUI_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 0.6750674999999999,
-    "ote_low": 0.67455,
-    "ote_high": 0.675585,
-    "stop": 0.678,
-    "target": 0.6665,
-    "rr": 2.92,
-    "last_price": 0.6706,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "AAVE_USDT:Min15:SHORT:1786908600",
-    "created_at": "2026-08-16T23:08:04+00:00",
-    "symbol": "AAVE_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 86.5216,
-    "ote_low": 86.446,
-    "ote_high": 86.5972,
-    "stop": 86.95,
-    "target": 85.27,
-    "rr": 2.92,
-    "last_price": 85.97,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "NEUTRAL",
-      "Hour4": "SHORT"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "BICO_USDT:Min15:LONG:1786917600",
-    "created_at": "2026-08-16T23:08:19+00:00",
-    "symbol": "BICO_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 0.02303755,
-    "ote_low": 0.0229921,
-    "ote_high": 0.023083,
-    "stop": 0.02278,
-    "target": 0.02379,
-    "rr": 2.92,
-    "last_price": 0.02324,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
       "Hour4": "SHORT"
     },
     "result_r": -1
