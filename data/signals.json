@@ -1,5 +1,45 @@
 [
   {
+    "id": "NEAR_USDT:Min15:SHORT:1787014800",
+    "created_at": "2026-08-18T05:45:23+00:00",
+    "symbol": "NEAR_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 1.6416050000000002,
+    "ote_low": 1.6403,
+    "ote_high": 1.64291,
+    "stop": 1.649,
+    "target": 1.62,
+    "rr": 2.92,
+    "last_price": 1.643,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "SEI_USDT:Min15:SHORT:1787013900",
+    "created_at": "2026-08-18T05:45:30+00:00",
+    "symbol": "SEI_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.03937160000000001,
+    "ote_low": 0.039296000000000005,
+    "ote_high": 0.0394472,
+    "stop": 0.0398,
+    "target": 0.03812,
+    "rr": 2.92,
+    "last_price": 0.03875,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "LONG",
+      "Hour4": "SHORT"
+    }
+  },
+  {
     "id": "TRX_USDT:Min15:LONG:1787020200",
     "created_at": "2026-08-18T05:15:02+00:00",
     "symbol": "TRX_USDT",
@@ -268,7 +308,7 @@
     "symbol": "NEAR_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 1.6341,
     "ote_low": 1.6332,
     "ote_high": 1.635,
@@ -280,7 +320,8 @@
       "Min15": "LONG",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "HYPE_USDT:Min15:LONG:1787001300",
@@ -1040,7 +1081,7 @@
     "symbol": "USOIL_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 84.00575,
     "ote_low": 83.9765,
     "ote_high": 84.035,
@@ -1052,7 +1093,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "FARTCOIN_USDT:Min15:LONG:1786997700",
@@ -4122,48 +4164,6 @@
     "target": 59.687,
     "rr": 2.92,
     "last_price": 59.271,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "LONG"
-    },
-    "result_r": 2.92
-  },
-  {
-    "id": "SILVER_USDT:Min15:LONG:1786941000",
-    "created_at": "2026-08-17T08:56:33+00:00",
-    "symbol": "SILVER_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 65.64789999999999,
-    "ote_low": 65.6218,
-    "ote_high": 65.674,
-    "stop": 65.5,
-    "target": 66.08,
-    "rr": 2.92,
-    "last_price": 65.63,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "SPX500_USDT:Min15:LONG:1786936500",
-    "created_at": "2026-08-17T08:56:39+00:00",
-    "symbol": "SPX500_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 7789.568,
-    "ote_low": 7788.956,
-    "ote_high": 7790.18,
-    "stop": 7786.1,
-    "target": 7799.7,
-    "rr": 2.92,
-    "last_price": 7793.2,
     "bias": {
       "Min15": "LONG",
       "Min60": "LONG",
