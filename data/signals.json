@@ -1,11 +1,51 @@
 [
   {
+    "id": "FILECOIN_USDT:Min15:LONG:1787072400",
+    "created_at": "2026-08-18T21:10:33+00:00",
+    "symbol": "FILECOIN_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.625325,
+    "ote_low": 0.62465,
+    "ote_high": 0.626,
+    "stop": 0.6215,
+    "target": 0.6365,
+    "rr": 2.92,
+    "last_price": 0.6308,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "BNB_USDT:Min15:SHORT:1787081400",
+    "created_at": "2026-08-18T21:10:44+00:00",
+    "symbol": "BNB_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 604.592,
+    "ote_low": 604.52,
+    "ote_high": 604.664,
+    "stop": 605.0,
+    "target": 603.4,
+    "rr": 2.92,
+    "last_price": 604.0,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "SHORT"
+    }
+  },
+  {
     "id": "XRP_USDT:Min15:LONG:1787079600",
     "created_at": "2026-08-18T20:53:16+00:00",
     "symbol": "XRP_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 1.0010629999999998,
     "ote_low": 1.000946,
     "ote_high": 1.00118,
@@ -17,7 +57,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "PUMPFUN_USDT:Min15:LONG:1787082300",
@@ -85,7 +126,7 @@
     "symbol": "SOL_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 76.9777,
     "ote_low": 76.9534,
     "ote_high": 77.002,
@@ -97,7 +138,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "PRL_USDT:Min15:SHORT:1787061600",
@@ -166,7 +208,7 @@
     "symbol": "BEAT_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.23356700000000002,
     "ote_low": 0.23282,
     "ote_high": 0.23431400000000002,
@@ -178,7 +220,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "AAVE_USDT:Min15:LONG:1787070600",
@@ -248,7 +291,7 @@
     "symbol": "AAPLSTOCK_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 310.4321,
     "ote_low": 310.3682,
     "ote_high": 310.496,
@@ -260,7 +303,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "SNDKSTOCK_USDT:Min15:SHORT:1787067900",
@@ -700,7 +744,7 @@
     "symbol": "ONDO_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.32963200000000004,
     "ote_low": 0.329344,
     "ote_high": 0.32992,
@@ -712,7 +756,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "ETH_USDT:Min15:LONG:1787070600",
@@ -4118,48 +4163,6 @@
     "bias": {
       "Min15": "SHORT",
       "Min60": "SHORT",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "TAO_USDT:Min15:SHORT:1787002200",
-    "created_at": "2026-08-17T23:37:14+00:00",
-    "symbol": "TAO_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "TARGET",
-    "entry": 196.493,
-    "ote_low": 196.42999999999998,
-    "ote_high": 196.55599999999998,
-    "stop": 196.85,
-    "target": 195.45,
-    "rr": 2.92,
-    "last_price": 196.07,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "LONG",
-      "Hour4": "SHORT"
-    },
-    "result_r": 2.92
-  },
-  {
-    "id": "KORU_USDT:Min15:LONG:1786995900",
-    "created_at": "2026-08-17T23:37:20+00:00",
-    "symbol": "KORU_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 23.48775,
-    "ote_low": 23.4405,
-    "ote_high": 23.535,
-    "stop": 23.22,
-    "target": 24.27,
-    "rr": 2.92,
-    "last_price": 23.75,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
       "Hour4": "LONG"
     },
     "result_r": -1
