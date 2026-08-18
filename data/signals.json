@@ -1,5 +1,45 @@
 [
   {
+    "id": "VELVET_USDT:Min15:SHORT:1787035500",
+    "created_at": "2026-08-18T09:49:26+00:00",
+    "symbol": "VELVET_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.494603,
+    "ote_low": 0.49328,
+    "ote_high": 0.495926,
+    "stop": 0.5021,
+    "target": 0.4727,
+    "rr": 2.92,
+    "last_price": 0.4939,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "SHORT"
+    }
+  },
+  {
+    "id": "XMR_USDT:Min15:LONG:1787026500",
+    "created_at": "2026-08-18T09:49:48+00:00",
+    "symbol": "XMR_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 415.94039999999995,
+    "ote_low": 415.5768,
+    "ote_high": 416.304,
+    "stop": 413.88,
+    "target": 421.96,
+    "rr": 2.92,
+    "last_price": 417.04,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "HYPE_USDT:Min15:LONG:1787031000",
     "created_at": "2026-08-18T09:15:04+00:00",
     "symbol": "HYPE_USDT",
@@ -4118,47 +4158,5 @@
       "Hour4": "LONG"
     },
     "result_r": 2.92
-  },
-  {
-    "id": "CAP_USDT:Min15:SHORT:1786958100",
-    "created_at": "2026-08-17T12:14:33+00:00",
-    "symbol": "CAP_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 0.0677549,
-    "ote_low": 0.067394,
-    "ote_high": 0.0681158,
-    "stop": 0.0698,
-    "target": 0.06178,
-    "rr": 2.92,
-    "last_price": 0.06653,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "HYPE_USDT:Min15:LONG:1786956300",
-    "created_at": "2026-08-17T11:52:24+00:00",
-    "symbol": "HYPE_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 59.28367,
-    "ote_low": 59.24614,
-    "ote_high": 59.3212,
-    "stop": 59.071,
-    "target": 59.905,
-    "rr": 2.92,
-    "last_price": 59.578,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
   }
 ]
