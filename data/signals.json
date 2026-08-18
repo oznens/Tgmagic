@@ -1,5 +1,25 @@
 [
   {
+    "id": "NIULAI_USDT:Min15:LONG:1787086800",
+    "created_at": "2026-08-18T23:09:29+00:00",
+    "symbol": "NIULAI_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.036783750000000004,
+    "ote_low": 0.0362325,
+    "ote_high": 0.037335,
+    "stop": 0.03366,
+    "target": 0.04591,
+    "rr": 2.92,
+    "last_price": 0.04036,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "SOXL_USDT:Min15:LONG:1787076000",
     "created_at": "2026-08-18T22:52:30+00:00",
     "symbol": "SOXL_USDT",
@@ -45,7 +65,7 @@
     "symbol": "EDEN_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.0513265,
     "ote_low": 0.051250000000000004,
     "ote_high": 0.051403,
@@ -57,7 +77,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "SKHYNIXSTOCK_USDT:Min15:SHORT:1787082300",
@@ -86,7 +107,7 @@
     "symbol": "KORU_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 17.885849999999998,
     "ote_low": 17.871,
     "ote_high": 17.9007,
@@ -98,7 +119,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SUI_USDT:Min15:SHORT:1787077800",
@@ -187,7 +209,7 @@
     "symbol": "UNI_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 3.2946299999999997,
     "ote_low": 3.29346,
     "ote_high": 3.2958,
@@ -199,7 +221,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "1000BONK_USDT:Min15:SHORT:1787088600",
@@ -431,7 +454,7 @@
     "symbol": "TIA_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.3001605,
     "ote_low": 0.30003,
     "ote_high": 0.300291,
@@ -443,7 +466,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "FILECOIN_USDT:Min15:LONG:1787072400",
@@ -533,7 +557,7 @@
     "symbol": "SPX500_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 7695.7300000000005,
     "ote_low": 7695.1,
     "ote_high": 7696.360000000001,
@@ -545,7 +569,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "DRAM_USDT:Min15:SHORT:1787071500",
@@ -762,7 +787,7 @@
     "symbol": "SNDKSTOCK_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 1643.4384,
     "ote_low": 1640.904,
     "ote_high": 1645.9728,
@@ -774,7 +799,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SILVER_USDT:Min15:SHORT:1787073300",
@@ -906,7 +932,7 @@
     "symbol": "SNXX_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 15.964200000000002,
     "ote_low": 15.912,
     "ote_high": 16.0164,
@@ -918,7 +944,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "NEAR_USDT:Min15:SHORT:1787067000",
@@ -1568,7 +1595,7 @@
     "symbol": "NAS100_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 29612.25,
     "ote_low": 29601.0,
     "ote_high": 29623.5,
@@ -1580,7 +1607,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SEI_USDT:Min15:LONG:1787060700",
@@ -4136,27 +4164,6 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "TESLA_USDT:Min15:LONG:1787011200",
-    "created_at": "2026-08-18T01:54:59+00:00",
-    "symbol": "TESLA_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 340.1687,
-    "ote_low": 340.1354,
-    "ote_high": 340.202,
-    "stop": 339.98,
-    "target": 340.72,
-    "rr": 2.92,
-    "last_price": 339.82,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
     },
     "result_r": -1
   }
