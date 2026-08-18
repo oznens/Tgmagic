@@ -1,5 +1,45 @@
 [
   {
+    "id": "NAS100_USDT:Min15:SHORT:1787059800",
+    "created_at": "2026-08-18T16:13:22+00:00",
+    "symbol": "NAS100_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 29612.25,
+    "ote_low": 29601.0,
+    "ote_high": 29623.5,
+    "stop": 29676.0,
+    "target": 29426.0,
+    "rr": 2.92,
+    "last_price": 29545.0,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "SEI_USDT:Min15:LONG:1787060700",
+    "created_at": "2026-08-18T16:13:38+00:00",
+    "symbol": "SEI_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.038894750000000006,
+    "ote_low": 0.0388745,
+    "ote_high": 0.038915000000000005,
+    "stop": 0.03878,
+    "target": 0.03923,
+    "rr": 2.92,
+    "last_price": 0.03901,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "NEUTRAL"
+    }
+  },
+  {
     "id": "AAVE_USDT:Min15:LONG:1787060700",
     "created_at": "2026-08-18T15:51:08+00:00",
     "symbol": "AAVE_USDT",
@@ -417,7 +457,7 @@
     "symbol": "FILECOIN_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.6247834999999999,
     "ote_low": 0.62441,
     "ote_high": 0.625157,
@@ -429,7 +469,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "CAP_USDT:Min15:LONG:1787053500",
@@ -4131,48 +4172,6 @@
     "bias": {
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
-      "Hour4": "SHORT"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "LINK_USDT:Min15:LONG:1786982400",
-    "created_at": "2026-08-17T17:46:07+00:00",
-    "symbol": "LINK_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 9.49846,
-    "ote_low": 9.49432,
-    "ote_high": 9.5026,
-    "stop": 9.475,
-    "target": 9.567,
-    "rr": 2.92,
-    "last_price": 9.504,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "CYS_USDT:Min15:SHORT:1786982400",
-    "created_at": "2026-08-17T17:46:20+00:00",
-    "symbol": "CYS_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 0.47203049999999996,
-    "ote_low": 0.46982999999999997,
-    "ote_high": 0.47423099999999996,
-    "stop": 0.4845,
-    "target": 0.4356,
-    "rr": 2.92,
-    "last_price": 0.4574,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "LONG",
       "Hour4": "SHORT"
     },
     "result_r": -1
