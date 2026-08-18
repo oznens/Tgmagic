@@ -1,5 +1,45 @@
 [
   {
+    "id": "ACE_USDT:Min15:LONG:1787073300",
+    "created_at": "2026-08-18T22:02:35+00:00",
+    "symbol": "ACE_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.21801540000000003,
+    "ote_low": 0.2167068,
+    "ote_high": 0.21932400000000002,
+    "stop": 0.2106,
+    "target": 0.23968,
+    "rr": 2.92,
+    "last_price": 0.22697,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
+    "id": "BEAT_USDT:Min15:SHORT:1787082300",
+    "created_at": "2026-08-18T22:02:37+00:00",
+    "symbol": "BEAT_USDT",
+    "interval": "Min15",
+    "direction": "SHORT",
+    "status": "PENDING",
+    "entry": 0.2288825,
+    "ote_low": 0.22805,
+    "ote_high": 0.229715,
+    "stop": 0.2336,
+    "target": 0.2151,
+    "rr": 2.92,
+    "last_price": 0.2243,
+    "bias": {
+      "Min15": "SHORT",
+      "Min60": "SHORT",
+      "Hour4": "SHORT"
+    }
+  },
+  {
     "id": "XAU_USDT:Min15:SHORT:1787068800",
     "created_at": "2026-08-18T21:52:47+00:00",
     "symbol": "XAU_USDT",
@@ -145,7 +185,7 @@
     "symbol": "INJ_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 4.06682,
     "ote_low": 4.0652,
     "ote_high": 4.06844,
@@ -157,7 +197,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "TIA_USDT:Min15:SHORT:1787077800",
@@ -370,7 +411,7 @@
     "symbol": "SKHYSTOCK_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 157.4736,
     "ote_low": 157.326,
     "ote_high": 157.62120000000002,
@@ -382,7 +423,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "BEAT_USDT:Min15:SHORT:1787069700",
@@ -4120,47 +4162,5 @@
       "Hour4": "LONG"
     },
     "result_r": 2.92
-  },
-  {
-    "id": "POL_USDT:Min15:LONG:1787011200",
-    "created_at": "2026-08-18T01:55:31+00:00",
-    "symbol": "POL_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 0.07986755,
-    "ote_low": 0.07982209999999999,
-    "ote_high": 0.079913,
-    "stop": 0.07961,
-    "target": 0.08062,
-    "rr": 2.92,
-    "last_price": 0.07942,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "NEUTRAL",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "CRV_USDT:Min15:SHORT:1787000400",
-    "created_at": "2026-08-18T01:55:32+00:00",
-    "symbol": "CRV_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 0.243478,
-    "ote_low": 0.24328,
-    "ote_high": 0.243676,
-    "stop": 0.2446,
-    "target": 0.2402,
-    "rr": 2.92,
-    "last_price": 0.2434,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
-      "Hour4": "NEUTRAL"
-    },
-    "result_r": -1
   }
 ]
