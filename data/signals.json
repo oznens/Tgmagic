@@ -85,7 +85,7 @@
     "symbol": "INJ_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 4.368869999999999,
     "ote_low": 4.36554,
     "ote_high": 4.372199999999999,
@@ -97,7 +97,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "RBLXSTOCK_USDT:Min15:LONG:1787142600",
@@ -267,7 +268,7 @@
     "symbol": "TIA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.30734249999999996,
     "ote_low": 0.306735,
     "ote_high": 0.30795,
@@ -279,7 +280,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "ICP_USDT:Min15:LONG:1787144400",
@@ -409,7 +411,7 @@
     "symbol": "TESLA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 347.06385,
     "ote_low": 346.9167,
     "ote_high": 347.211,
@@ -421,7 +423,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "NICKEL_USDT:Min15:LONG:1787139900",
