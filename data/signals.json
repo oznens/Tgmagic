@@ -1,5 +1,25 @@
 [
   {
+    "id": "UNITREE_USDT:Min15:LONG:1787175900",
+    "created_at": "2026-08-19T23:53:15+00:00",
+    "symbol": "UNITREE_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 112.98485,
+    "ote_low": 112.8287,
+    "ote_high": 113.14099999999999,
+    "stop": 112.1,
+    "target": 115.57,
+    "rr": 2.92,
+    "last_price": 113.44,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "NEUTRAL",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "SPCXSTOCK_USDT:Min15:LONG:1787168700",
     "created_at": "2026-08-19T23:35:58+00:00",
     "symbol": "SPCXSTOCK_USDT",
@@ -25,7 +45,7 @@
     "symbol": "BTW_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.3856247,
     "ote_low": 0.3838274,
     "ote_high": 0.387422,
@@ -37,7 +57,8 @@
       "Min15": "LONG",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "ADA_USDT:Min15:LONG:1787166000",
@@ -651,7 +672,7 @@
     "symbol": "VELVET_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.6395395,
     "ote_low": 0.63787,
     "ote_high": 0.641209,
@@ -663,7 +684,8 @@
       "Min15": "SHORT",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "HEMI_USDT:Min15:LONG:1787158800",
@@ -4140,26 +4162,5 @@
       "Hour4": "LONG"
     },
     "result_r": -1
-  },
-  {
-    "id": "SNDKSTOCK_USDT:Min15:LONG:1787097600",
-    "created_at": "2026-08-19T03:28:48+00:00",
-    "symbol": "SNDKSTOCK_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "TARGET",
-    "entry": 1581.3841499999999,
-    "ote_low": 1578.6693,
-    "ote_high": 1584.099,
-    "stop": 1566.0,
-    "target": 1626.33,
-    "rr": 2.92,
-    "last_price": 1597.34,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
-    },
-    "result_r": 2.92
   }
 ]
