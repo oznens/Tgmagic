@@ -45,7 +45,7 @@
     "symbol": "SKHYSTOCK_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 157.9315,
     "ote_low": 157.81,
     "ote_high": 158.053,
@@ -57,7 +57,8 @@
       "Min15": "SHORT",
       "Min60": "NEUTRAL",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "UKOIL_USDT:Min15:LONG:1787142600",
@@ -85,7 +86,7 @@
     "symbol": "CYS_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.5764659999999999,
     "ote_low": 0.5749719999999999,
     "ote_high": 0.5779599999999999,
@@ -97,7 +98,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "TESLA_USDT:Min15:LONG:1787168700",
@@ -456,7 +458,7 @@
     "symbol": "ICP_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 2.19262,
     "ote_low": 2.18704,
     "ote_high": 2.1982,
@@ -468,7 +470,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "SHORT"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SILVER_USDT:Min15:LONG:1787152500",
@@ -538,7 +541,7 @@
     "symbol": "ONDO_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.3294065,
     "ote_low": 0.328223,
     "ote_high": 0.33059,
@@ -550,7 +553,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "FET_USDT:Min15:LONG:1787147100",
@@ -662,7 +666,7 @@
     "symbol": "PUMPFUN_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.0030572,
     "ote_low": 0.0030464,
     "ote_high": 0.003068,
@@ -674,7 +678,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "PENGU_USDT:Min15:LONG:1787146200",
