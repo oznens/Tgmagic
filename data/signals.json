@@ -1,5 +1,25 @@
 [
   {
+    "id": "HEMI_USDT:Min15:LONG:1787158800",
+    "created_at": "2026-08-19T19:56:37+00:00",
+    "symbol": "HEMI_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.00865802,
+    "ote_low": 0.00862184,
+    "ote_high": 0.008694200000000001,
+    "stop": 0.008453,
+    "target": 0.009257,
+    "rr": 2.92,
+    "last_price": 0.008654,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "ENA_USDT:Min15:LONG:1787139900",
     "created_at": "2026-08-19T19:14:42+00:00",
     "symbol": "ENA_USDT",
@@ -126,7 +146,7 @@
     "symbol": "1000RATS_USDT",
     "interval": "Min15",
     "direction": "SHORT",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.0408969,
     "ote_low": 0.040824,
     "ote_high": 0.0409698,
@@ -138,7 +158,8 @@
       "Min15": "SHORT",
       "Min60": "SHORT",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "XAUT_USDT:Min15:LONG:1787153400",
@@ -4148,26 +4169,5 @@
       "Min60": "SHORT",
       "Hour4": "SHORT"
     }
-  },
-  {
-    "id": "NEAR_USDT:Min15:SHORT:1787092200",
-    "created_at": "2026-08-19T01:36:01+00:00",
-    "symbol": "NEAR_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 1.58833,
-    "ote_low": 1.5868,
-    "ote_high": 1.58986,
-    "stop": 1.597,
-    "target": 1.563,
-    "rr": 2.92,
-    "last_price": 1.581,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
   }
 ]
