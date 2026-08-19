@@ -1,5 +1,25 @@
 [
   {
+    "id": "ZEC_USDT:Min15:LONG:1787167800",
+    "created_at": "2026-08-19T21:54:10+00:00",
+    "symbol": "ZEC_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 556.2179,
+    "ote_low": 554.6618,
+    "ote_high": 557.774,
+    "stop": 547.4,
+    "target": 581.98,
+    "rr": 2.92,
+    "last_price": 566.13,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "INTCSTOCK_USDT:Min15:SHORT:1787166900",
     "created_at": "2026-08-19T21:04:44+00:00",
     "symbol": "INTCSTOCK_USDT",
@@ -4154,27 +4174,6 @@
     "target": 1566.0,
     "rr": 2.92,
     "last_price": 1619.57,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "SKHYNIXSTOCK_USDT:Min15:SHORT:1787094900",
-    "created_at": "2026-08-19T01:35:34+00:00",
-    "symbol": "SKHYNIXSTOCK_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 1100.0253,
-    "ote_low": 1098.048,
-    "ote_high": 1102.0026,
-    "stop": 1111.23,
-    "target": 1067.29,
-    "rr": 2.92,
-    "last_price": 1098.7,
     "bias": {
       "Min15": "SHORT",
       "Min60": "SHORT",
