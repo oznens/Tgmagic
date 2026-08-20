@@ -20,16 +20,16 @@ th,td{text-align:left;padding:14px;border-bottom:1px solid #24334c;white-space:n
 <div class="top"><div><h1>MEXC OTE Futures</h1><div class="sub">BOS/CHoCH · Swing yapısı · OTE 0.70–0.79</div></div><div id="updated" class="muted">Yükleniyor…</div></div>
 <section class="stats">
 <div class="card"><div class="muted">Toplam sinyal</div><div class="num" id="total">—</div></div>
-<div class="card"><div class="muted">Aktif</div><div class="num active" id="waiting">—</div></div>
+<div class="card"><div class="muted">Bekleyen + aktif</div><div class="num active" id="waiting">—</div></div>
 <div class="card"><div class="muted">Başarılı</div><div class="num target" id="wins">—</div></div>
 <div class="card"><div class="muted">Toplam R</div><div class="num" id="r">—</div></div>
 </section>
-<div class="filters"><button onclick="show('ALL')">Tümü</button><button onclick="show('ACTIVE')">Aktif</button><button onclick="show('TARGET')">Hedef</button><button onclick="show('STOP')">Stop</button></div>
+<div class="filters"><button onclick="show('ALL')">Tümü</button><button onclick="show('WAITING')">Bekleyen</button><button onclick="show('ACTIVE')">Aktif</button><button onclick="show('TARGET')">Hedef</button><button onclick="show('STOP')">Stop</button></div>
 <section class="card table"><table><thead><tr><th>Tarih</th><th>Parite</th><th>Yön</th><th>Periyot</th><th>OTE giriş</th><th>Stop</th><th>Hedef</th><th>R/R</th><th>Durum</th></tr></thead><tbody id="rows"></tbody></table></section>
 <p class="muted">Yalnızca araştırma ve test amaçlıdır; finansal tavsiye değildir. Sistem emir açmaz.</p>
 </main><script>
 let signals=[];const fmt=n=>Number(n).toLocaleString('tr-TR',{maximumSignificantDigits:8});
-function status(s){return s==='TARGET'?'Hedef':s==='STOP'?'Stop':'Aktif'}
+function status(s){return s==='TARGET'?'Hedef':s==='STOP'?'Stop':s==='EXPIRED'?'Kaçtı':s==='WAITING'?'Bekleyen':'Aktif'}
 function show(filter){const list=filter==='ALL'?signals:signals.filter(x=>x.status===filter);document.querySelector('#rows').innerHTML=list.map(x=>`<tr><td>${new Date(x.created_at).toLocaleString('tr-TR')}</td><td><b>${x.symbol}</b></td><td class="${x.direction.toLowerCase()} badge">${x.direction}</td><td>${x.interval}</td><td>${fmt(x.ote_low)} – ${fmt(x.ote_high)}</td><td>${fmt(x.stop)}</td><td>${fmt(x.target)}</td><td>${x.rr}R</td><td class="${x.status.toLowerCase()} badge">${status(x.status)}</td></tr>`).join('')||'<tr><td colspan="9">Henüz sinyal yok.</td></tr>'}
-fetch('./data/signals.json?'+Date.now()).then(r=>r.json()).then(data=>{signals=data.filter(x=>x.version===2);let done=signals.filter(x=>x.status!=='ACTIVE'),wins=done.filter(x=>x.status==='TARGET').length,totalR=done.reduce((a,x)=>a+(x.result_r||0),0);total.textContent=signals.length;waiting.textContent=signals.filter(x=>x.status==='ACTIVE').length;document.querySelector('#wins').textContent=done.length?Math.round(wins/done.length*100)+'%':'—';document.querySelector('#r').textContent=(totalR>=0?'+':'')+totalR.toFixed(2)+'R';updated.textContent='Son güncelleme: '+new Date().toLocaleString('tr-TR');show('ALL')}).catch(()=>updated.textContent='Veri yüklenemedi');
+fetch('./data/signals.json?'+Date.now()).then(r=>r.json()).then(data=>{signals=data.filter(x=>x.version===2);let done=signals.filter(x=>!['WAITING','ACTIVE'].includes(x.status)),wins=done.filter(x=>x.status==='TARGET').length,totalR=done.reduce((a,x)=>a+(x.result_r||0),0);total.textContent=signals.length;waiting.textContent=signals.filter(x=>['WAITING','ACTIVE'].includes(x.status)).length;document.querySelector('#wins').textContent=done.length?Math.round(wins/done.length*100)+'%':'—';document.querySelector('#r').textContent=(totalR>=0?'+':'')+totalR.toFixed(2)+'R';updated.textContent='Son güncelleme: '+new Date().toLocaleString('tr-TR');show('ALL')}).catch(()=>updated.textContent='Veri yüklenemedi');
 </script></body></html>
