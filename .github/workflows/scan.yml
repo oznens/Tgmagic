@@ -1,5 +1,6 @@
 name: MEXC Futures Scan
 # v2 OTE state tracking
+# chart-history refresh
 on:
   workflow_dispatch:
   push:
