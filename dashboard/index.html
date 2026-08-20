@@ -4,32 +4,58 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MEXC OTE Sinyal Paneli</title>
 <style>
-:root{color-scheme:dark;--bg:#08101e;--card:#111c31;--muted:#91a1b8;--green:#36d399;--red:#fb7185;--blue:#60a5fa}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#142341,var(--bg) 35%);font:15px system-ui;color:#edf3ff}
-main{max-width:1180px;margin:auto;padding:28px 18px}.top{display:flex;justify-content:space-between;gap:20px;align-items:end;flex-wrap:wrap}
-h1{margin:0;font-size:clamp(26px,5vw,42px)}.sub,.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:25px 0}
-.card{background:#111c31cc;border:1px solid #263651;border-radius:16px;padding:18px;box-shadow:0 12px 40px #0004}
-.num{font-size:27px;font-weight:800;margin-top:8px}table{width:100%;border-collapse:collapse}.table{overflow:auto;padding:0}
-th,td{text-align:left;padding:14px;border-bottom:1px solid #24334c;white-space:nowrap}th{color:#9fb0c7;font-size:12px;text-transform:uppercase}
-.long,.target{color:var(--green)}.short,.stop{color:var(--red)}.pending,.active{color:var(--blue)}
-.badge{font-weight:800}.filters{display:flex;gap:10px;margin:15px 0}.filters button{background:#182641;color:#dbe8ff;border:1px solid #304260;border-radius:9px;padding:9px 13px;cursor:pointer}
-@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
-</style>
-</head>
+:root{color-scheme:dark;--bg:#07101d;--card:#111c31;--line:#263651;--muted:#91a1b8;--green:#36d399;--red:#fb7185;--blue:#60a5fa;--amber:#fbbf24}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#142341,var(--bg) 38%);font:14px system-ui;color:#edf3ff}
+main{max-width:1380px;margin:auto;padding:26px 18px}.top{display:flex;justify-content:space-between;gap:20px;align-items:end;flex-wrap:wrap}
+h1{margin:0;font-size:clamp(27px,5vw,43px)}.sub,.muted{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:24px 0}
+.card{background:#111c31dd;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 12px 40px #0004}.num{font-size:27px;font-weight:800;margin-top:7px}
+.target,.long{color:var(--green)}.stop,.short{color:var(--red)}.waiting{color:var(--amber)}.active{color:var(--blue)}.expired{color:var(--muted)}
+.toolbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:14px 0}.filters,.exports{display:flex;gap:8px;flex-wrap:wrap}
+button{background:#182641;color:#dbe8ff;border:1px solid #304260;border-radius:9px;padding:9px 13px;cursor:pointer}button:hover{background:#223454}
+.table{overflow:auto;padding:0}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 13px;border-bottom:1px solid #24334c;white-space:nowrap}
+th{color:#9fb0c7;font-size:11px;text-transform:uppercase;position:sticky;top:0;background:#111c31}.badge{font-weight:800}.mini{width:180px;height:62px;display:block;cursor:pointer;border-radius:7px;background:#091321}
+#modal{position:fixed;inset:0;background:#020712df;display:none;place-items:center;padding:18px;z-index:20}#modal.open{display:grid}.dialog{width:min(1100px,100%);max-height:94vh;overflow:auto;background:#0c1729;border:1px solid #365071;border-radius:18px;padding:18px}
+.dialog-head{display:flex;justify-content:space-between;gap:15px;align-items:center}.dialog canvas{width:100%;height:460px;background:#07101d;border-radius:12px;margin-top:14px}
+.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.level{background:#101f35;border-radius:10px;padding:11px}.timeline{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.event{border:1px solid #304260;border-radius:8px;padding:7px 9px}
+@media(max-width:850px){.stats{grid-template-columns:repeat(2,1fr)}.levels{grid-template-columns:repeat(2,1fr)}.dialog canvas{height:320px}}
+</style></head>
 <body><main>
-<div class="top"><div><h1>MEXC OTE Futures</h1><div class="sub">BOS/CHoCH · Swing yapısı · OTE 0.70–0.79</div></div><div id="updated" class="muted">Yükleniyor…</div></div>
+<div class="top"><div><h1>MEXC OTE Futures</h1><div class="sub">BOS/CHoCH · Swing yapısı · OTE 0.70–0.79 · Mum grafikleri</div></div><div id="updated" class="muted">Veriler yükleniyor…</div></div>
 <section class="stats">
-<div class="card"><div class="muted">Toplam sinyal</div><div class="num" id="total">—</div></div>
-<div class="card"><div class="muted">Bekleyen + aktif</div><div class="num active" id="waiting">—</div></div>
-<div class="card"><div class="muted">Başarılı</div><div class="num target" id="wins">—</div></div>
-<div class="card"><div class="muted">Toplam R</div><div class="num" id="r">—</div></div>
+<div class="card"><div class="muted">Toplam kayıt</div><div class="num" id="total">—</div></div>
+<div class="card"><div class="muted">Bekleyen</div><div class="num waiting" id="waiting">—</div></div>
+<div class="card"><div class="muted">Aktif</div><div class="num active" id="active">—</div></div>
+<div class="card"><div class="muted">Başarı oranı</div><div class="num target" id="wins">—</div></div>
+<div class="card"><div class="muted">Toplam R</div><div class="num" id="rvalue">—</div></div>
 </section>
-<div class="filters"><button onclick="show('ALL')">Tümü</button><button onclick="show('WAITING')">Bekleyen</button><button onclick="show('ACTIVE')">Aktif</button><button onclick="show('TARGET')">Hedef</button><button onclick="show('STOP')">Stop</button></div>
-<section class="card table"><table><thead><tr><th>Tarih</th><th>Parite</th><th>Yön</th><th>Periyot</th><th>OTE giriş</th><th>Stop</th><th>Hedef</th><th>R/R</th><th>Durum</th></tr></thead><tbody id="rows"></tbody></table></section>
-<p class="muted">Yalnızca araştırma ve test amaçlıdır; finansal tavsiye değildir. Sistem emir açmaz.</p>
-</main><script>
-let signals=[];const fmt=n=>Number(n).toLocaleString('tr-TR',{maximumSignificantDigits:8});
-function status(s){return s==='TARGET'?'Hedef':s==='STOP'?'Stop':s==='EXPIRED'?'Kaçtı':s==='WAITING'?'Bekleyen':'Aktif'}
-function show(filter){const list=filter==='ALL'?signals:signals.filter(x=>x.status===filter);document.querySelector('#rows').innerHTML=list.map(x=>`<tr><td>${new Date(x.created_at).toLocaleString('tr-TR')}</td><td><b>${x.symbol}</b></td><td class="${x.direction.toLowerCase()} badge">${x.direction}</td><td>${x.interval}</td><td>${fmt(x.ote_low)} – ${fmt(x.ote_high)}</td><td>${fmt(x.stop)}</td><td>${fmt(x.target)}</td><td>${x.rr}R</td><td class="${x.status.toLowerCase()} badge">${status(x.status)}</td></tr>`).join('')||'<tr><td colspan="9">Henüz sinyal yok.</td></tr>'}
-fetch('./data/signals.json?'+Date.now()).then(r=>r.json()).then(data=>{signals=data.filter(x=>x.version===2);let done=signals.filter(x=>!['WAITING','ACTIVE'].includes(x.status)),wins=done.filter(x=>x.status==='TARGET').length,totalR=done.reduce((a,x)=>a+(x.result_r||0),0);total.textContent=signals.length;waiting.textContent=signals.filter(x=>['WAITING','ACTIVE'].includes(x.status)).length;document.querySelector('#wins').textContent=done.length?Math.round(wins/done.length*100)+'%':'—';document.querySelector('#r').textContent=(totalR>=0?'+':'')+totalR.toFixed(2)+'R';updated.textContent='Son güncelleme: '+new Date().toLocaleString('tr-TR');show('ALL')}).catch(()=>updated.textContent='Veri yüklenemedi');
+<div class="toolbar"><div class="filters">
+<button onclick="show('ALL')">Tümü</button><button onclick="show('WAITING')">Bekleyen</button><button onclick="show('ACTIVE')">Aktif</button><button onclick="show('TARGET')">Hedef</button><button onclick="show('STOP')">Stop</button>
+</div><div class="exports"><button onclick="downloadJSON()">JSON indir</button><button onclick="downloadCSV()">CSV indir</button></div></div>
+<section class="card table"><table><thead><tr><th>Grafik</th><th>Tarih</th><th>Parite</th><th>Yön</th><th>Periyot</th><th>OTE giriş</th><th>Stop</th><th>Hedef</th><th>R/R</th><th>Durum</th></tr></thead><tbody id="rows"></tbody></table></section>
+<p class="muted">Grafiğe tıklayarak büyütebilirsin. Kayıtlar GitHub geçmişinde saklanır. Finansal tavsiye değildir; sistem emir açmaz.</p>
+</main>
+<div id="modal" onclick="if(event.target===this)closeModal()"><div class="dialog"><div class="dialog-head"><div><h2 id="modalTitle"></h2><div id="modalSub" class="muted"></div></div><button onclick="closeModal()">Kapat</button></div><canvas id="bigChart"></canvas><div id="levels" class="levels"></div><div id="timeline" class="timeline"></div></div></div>
+<script>
+let signals=[],currentFilter='ALL';const fmt=n=>Number(n).toLocaleString('tr-TR',{maximumSignificantDigits:9});
+const status=s=>s==='TARGET'?'Hedef':s==='STOP'?'Stop':s==='EXPIRED'?'Kaçtı':s==='WAITING'?'Bekleyen':'Aktif';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function drawChart(canvas,x,big=false){
+ const bars=x.chart||[];if(!bars.length){const c=canvas.getContext('2d');c.fillStyle='#91a1b8';c.fillText('Grafik sonraki taramada oluşacak',10,25);return}
+ const rect=canvas.getBoundingClientRect(),dpr=devicePixelRatio||1,w=Math.max(180,rect.width||canvas.width),h=Math.max(62,rect.height||canvas.height);canvas.width=w*dpr;canvas.height=h*dpr;
+ const c=canvas.getContext('2d');c.scale(dpr,dpr);c.clearRect(0,0,w,h);const pad=big?45:5,vals=bars.flatMap(b=>[b[2],b[3],x.stop,x.target,x.ote_low,x.ote_high]),lo=Math.min(...vals),hi=Math.max(...vals),span=hi-lo||1;
+ const y=v=>pad+(hi-v)/(span)*(h-pad*2),step=(w-pad*2)/bars.length,bw=Math.max(1,big?step*.55:step*.7);
+ c.strokeStyle='#17263d';c.lineWidth=1;for(let i=1;i<5;i++){let yy=pad+(h-pad*2)*i/5;c.beginPath();c.moveTo(pad,yy);c.lineTo(w-pad,yy);c.stroke()}
+ const zoneTop=y(x.ote_high),zoneBottom=y(x.ote_low);c.fillStyle='#38bdf833';c.fillRect(pad,zoneTop,w-pad*2,Math.max(2,zoneBottom-zoneTop));
+ bars.forEach((b,i)=>{const xx=pad+i*step+step/2,up=b[4]>=b[1];c.strokeStyle=up?'#36d399':'#fb7185';c.fillStyle=c.strokeStyle;c.beginPath();c.moveTo(xx,y(b[2]));c.lineTo(xx,y(b[3]));c.stroke();c.fillRect(xx-bw/2,Math.min(y(b[1]),y(b[4])),bw,Math.max(1,Math.abs(y(b[1])-y(b[4]))))});
+ [[x.target,'#36d399','Hedef'],[x.stop,'#fb7185','Stop'],[(x.ote_low+x.ote_high)/2,'#60a5fa','OTE']].forEach(([v,color,label])=>{c.strokeStyle=color;c.setLineDash(big?[7,5]:[3,3]);c.beginPath();c.moveTo(pad,y(v));c.lineTo(w-pad,y(v));c.stroke();c.setLineDash([]);if(big){c.fillStyle=color;c.font='12px system-ui';c.fillText(label+' '+fmt(v),pad+5,y(v)-5)}});
+}
+function show(filter){currentFilter=filter;const list=filter==='ALL'?signals:signals.filter(x=>x.status===filter);rows.innerHTML=list.map(x=>`<tr><td><canvas class="mini" data-id="${esc(x.id)}"></canvas></td><td>${new Date(x.created_at).toLocaleString('tr-TR')}</td><td><b>${esc(x.symbol)}</b></td><td class="${x.direction.toLowerCase()} badge">${x.direction}</td><td>${x.interval}</td><td>${fmt(x.ote_low)} – ${fmt(x.ote_high)}</td><td>${fmt(x.stop)}</td><td>${fmt(x.target)}</td><td>${x.rr}R</td><td class="${x.status.toLowerCase()} badge">${status(x.status)}</td></tr>`).join('')||'<tr><td colspan="10">Bu filtrede kayıt yok.</td></tr>';
+ document.querySelectorAll('.mini').forEach(cv=>{const x=signals.find(s=>s.id===cv.dataset.id);drawChart(cv,x);cv.onclick=()=>openModal(x)});
+}
+function openModal(x){modal.classList.add('open');modalTitle.textContent=x.symbol+' · '+x.direction;modalSub.textContent=new Date(x.created_at).toLocaleString('tr-TR')+' · '+x.interval+' · '+status(x.status);levels.innerHTML=`<div class="level"><span class="muted">OTE</span><br><b>${fmt(x.ote_low)} – ${fmt(x.ote_high)}</b></div><div class="level"><span class="muted">Stop</span><br><b class="stop">${fmt(x.stop)}</b></div><div class="level"><span class="muted">Hedef</span><br><b class="target">${fmt(x.target)}</b></div><div class="level"><span class="muted">R/R</span><br><b>${x.rr}R</b></div>`;timeline.innerHTML=(x.history||[]).map(e=>`<div class="event"><b>${status(e.status)}</b><br><span class="muted">${new Date(e.at).toLocaleString('tr-TR')}</span></div>`).join('');requestAnimationFrame(()=>drawChart(bigChart,x,true))}
+function closeModal(){modal.classList.remove('open')}
+function save(name,type,text){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function downloadJSON(){save('mexc-ote-kayitlari.json','application/json',JSON.stringify(signals,null,2))}
+function downloadCSV(){const cols=['created_at','symbol','direction','interval','ote_low','ote_high','stop','target','rr','status','result_r'];save('mexc-ote-kayitlari.csv','text/csv;charset=utf-8','\ufeff'+[cols.join(','),...signals.map(x=>cols.map(k=>x[k]??'').join(','))].join('\n'))}
+fetch('./data/signals.json?'+Date.now()).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(data=>{signals=data.filter(x=>x.version===2);const done=signals.filter(x=>['TARGET','STOP'].includes(x.status)),win=done.filter(x=>x.status==='TARGET').length,totalR=done.reduce((a,x)=>a+(x.result_r||0),0);total.textContent=signals.length;waiting.textContent=signals.filter(x=>x.status==='WAITING').length;active.textContent=signals.filter(x=>x.status==='ACTIVE').length;wins.textContent=done.length?Math.round(win/done.length*100)+'%':'—';rvalue.textContent=(totalR>=0?'+':'')+totalR.toFixed(2)+'R';updated.textContent='Son kayıt: '+(signals[0]?new Date(signals[0].created_at).toLocaleString('tr-TR'):'Henüz yok');show('ALL')}).catch(e=>updated.textContent='Veri yüklenemedi: '+e.message);
 </script></body></html>
