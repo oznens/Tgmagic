@@ -144,6 +144,16 @@ def setup(symbol):
     if distance / width > float(CONFIG["scan_near_ote_percent"]):
         return None
 
+    # A setup becomes active only after the latest completed candle actually
+    # trades inside the OTE zone. This prevents already-finished moves from
+    # being counted as instant winners.
+    bar = rows[-2]
+    touched = bar["l"] <= max(ote_a, ote_b) and bar["h"] >= min(ote_a, ote_b)
+    invalidated = (direction == "LONG" and (bar["l"] <= stop or bar["h"] >= target)) or \
+                  (direction == "SHORT" and (bar["h"] >= stop or bar["l"] <= target))
+    if not touched or invalidated:
+        return None
+
     risk = abs(entry - stop)
     reward = abs(target - entry)
     if risk <= 0 or not math.isfinite(reward / risk):
@@ -151,12 +161,14 @@ def setup(symbol):
 
     stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     return {
-        "id": f"{symbol}:{interval}:{direction}:{main['range_start']}",
+        "id": f"v2:{symbol}:{interval}:{direction}:{main['range_start']}:{rows[-2]['t']}",
+        "version": 2,
         "created_at": stamp,
+        "activated_candle": rows[-2]["t"],
         "symbol": symbol,
         "interval": interval,
         "direction": direction,
-        "status": "PENDING",
+        "status": "ACTIVE",
         "entry": entry,
         "ote_low": min(ote_a, ote_b),
         "ote_high": max(ote_a, ote_b),
@@ -188,22 +200,31 @@ def telegram(signal):
 
 def update_status(items):
     for item in items:
-        if item["status"] != "PENDING":
+        # Version 1 records used an optimistic status rule. Keep them as an
+        # audit trail but never update or display them as verified results.
+        if item.get("version") != 2 or item["status"] != "ACTIVE":
             continue
         try:
-            row = candles(item["symbol"], CONFIG["interval"], 8)[-2]
+            recent = candles(item["symbol"], CONFIG["interval"], 12)
         except Exception:
             continue
-        if item["direction"] == "LONG":
-            if row["l"] <= item["stop"]:
-                item["status"], item["result_r"] = "STOP", -1
-            elif row["h"] >= item["target"]:
-                item["status"], item["result_r"] = "TARGET", item["rr"]
-        else:
-            if row["h"] >= item["stop"]:
-                item["status"], item["result_r"] = "STOP", -1
-            elif row["l"] <= item["target"]:
-                item["status"], item["result_r"] = "TARGET", item["rr"]
+        for row in recent:
+            if row["t"] <= item.get("activated_candle", 0):
+                continue
+            if item["direction"] == "LONG":
+                if row["l"] <= item["stop"]:
+                    item["status"], item["result_r"] = "STOP", -1
+                    break
+                if row["h"] >= item["target"]:
+                    item["status"], item["result_r"] = "TARGET", item["rr"]
+                    break
+            else:
+                if row["h"] >= item["stop"]:
+                    item["status"], item["result_r"] = "STOP", -1
+                    break
+                if row["l"] <= item["target"]:
+                    item["status"], item["result_r"] = "TARGET", item["rr"]
+                    break
 
 
 def main():
