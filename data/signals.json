@@ -1,11 +1,31 @@
 [
   {
+    "id": "ETHFI_USDT:Min15:LONG:1787220000",
+    "created_at": "2026-08-20T11:54:42+00:00",
+    "symbol": "ETHFI_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 0.5682925000000001,
+    "ote_low": 0.567235,
+    "ote_high": 0.56935,
+    "stop": 0.5623,
+    "target": 0.5858,
+    "rr": 2.92,
+    "last_price": 0.562,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "SILVER_USDT:Min15:LONG:1787215500",
     "created_at": "2026-08-20T11:30:33+00:00",
     "symbol": "SILVER_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 66.7671,
     "ote_low": 66.7482,
     "ote_high": 66.786,
@@ -17,7 +37,8 @@
       "Min15": "LONG",
       "Min60": "NEUTRAL",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "ZEC_USDT:Min15:LONG:1787218200",
@@ -85,7 +106,7 @@
     "symbol": "ONDO_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.34911250000000005,
     "ote_low": 0.348775,
     "ote_high": 0.34945000000000004,
@@ -97,7 +118,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "HBAR_USDT:Min15:LONG:1787220000",
@@ -105,7 +127,7 @@
     "symbol": "HBAR_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.07220815,
     "ote_low": 0.0721573,
     "ote_high": 0.072259,
@@ -117,7 +139,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "FET_USDT:Min15:LONG:1787219100",
@@ -125,7 +148,7 @@
     "symbol": "FET_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.133363,
     "ote_low": 0.133246,
     "ote_high": 0.13348000000000002,
@@ -137,7 +160,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "CRCLSTOCK_USDT:Min15:LONG:1787211000",
@@ -185,7 +209,7 @@
     "symbol": "ICP_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 2.330925,
     "ote_low": 2.3293500000000003,
     "ote_high": 2.3325,
@@ -197,7 +221,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SOXL_USDT:Min15:SHORT:1787208300",
@@ -268,7 +293,7 @@
     "symbol": "DOGE_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.07674975,
     "ote_low": 0.0766845,
     "ote_high": 0.076815,
@@ -280,7 +305,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "ADA_USDT:Min15:LONG:1787219100",
@@ -288,7 +314,7 @@
     "symbol": "ADA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.1890945,
     "ote_low": 0.188919,
     "ote_high": 0.18927,
@@ -300,7 +326,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "AVAX_USDT:Min15:LONG:1787219100",
@@ -450,7 +477,7 @@
     "symbol": "TIA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.330126,
     "ote_low": 0.32989199999999996,
     "ote_high": 0.33036,
@@ -462,7 +489,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "PENGU_USDT:Min15:LONG:1787218200",
@@ -572,7 +600,7 @@
     "symbol": "ETH_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 2257.8754500000005,
     "ote_low": 2255.4639,
     "ote_high": 2260.2870000000003,
@@ -584,7 +612,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "HYPE_USDT:Min15:LONG:1787213700",
@@ -777,7 +806,7 @@
     "symbol": "AAVE_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 96.88925,
     "ote_low": 96.7835,
     "ote_high": 96.995,
@@ -789,7 +818,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "SPX500_USDT:Min15:LONG:1787204700",
@@ -880,7 +910,7 @@
     "symbol": "GPS_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.011817359999999999,
     "ote_low": 0.01178712,
     "ote_high": 0.0118476,
@@ -892,7 +922,8 @@
       "Min15": "LONG",
       "Min60": "NEUTRAL",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "PAXG_USDT:Min15:LONG:1787210100",
@@ -2534,7 +2565,7 @@
     "symbol": "ADA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.182515,
     "ote_low": 0.18193,
     "ote_high": 0.1831,
@@ -2546,7 +2577,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "HBAR_USDT:Min15:LONG:1787167800",
@@ -2826,7 +2858,7 @@
     "symbol": "ONDO_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "TARGET",
     "entry": 0.34134300000000006,
     "ote_low": 0.34050600000000003,
     "ote_high": 0.34218000000000004,
@@ -2838,7 +2870,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    }
+    },
+    "result_r": 2.92
   },
   {
     "id": "FILECOIN_USDT:Min15:LONG:1787166000",
@@ -4133,27 +4166,6 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "NEUTRAL"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "SNXX_USDT:Min15:LONG:1787133600",
-    "created_at": "2026-08-19T14:20:52+00:00",
-    "symbol": "SNXX_USDT",
-    "interval": "Min15",
-    "direction": "LONG",
-    "status": "STOP",
-    "entry": 15.57865,
-    "ote_low": 15.478299999999999,
-    "ote_high": 15.678999999999998,
-    "stop": 15.01,
-    "target": 17.24,
-    "rr": 2.92,
-    "last_price": 14.12,
-    "bias": {
-      "Min15": "LONG",
-      "Min60": "LONG",
-      "Hour4": "LONG"
     },
     "result_r": -1
   }
