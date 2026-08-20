@@ -179,6 +179,8 @@ def setup(symbol):
         "rr": round(reward / risk, 2),
         "last_price": main["close"],
         "bias": {interval: direction, **mtf},
+        "chart": [[x["t"], x["o"], x["h"], x["l"], x["c"]] for x in rows[-64:]],
+        "history": [{"at": stamp, "status": initial_status}],
     }
 
 
@@ -200,12 +202,21 @@ def telegram(signal):
     response.raise_for_status()
 
 
+def transition(item, status, row, result_r=None):
+    item["status"] = status
+    item["updated_at"] = datetime.fromtimestamp(row["t"], timezone.utc).isoformat()
+    item.setdefault("history", []).append({"at": item["updated_at"], "status": status})
+    if result_r is not None:
+        item["result_r"] = result_r
+
+
 def update_status(items):
     for item in items:
         if item.get("version") != 2 or item["status"] not in ("WAITING", "ACTIVE"):
             continue
         try:
-            recent = candles(item["symbol"], CONFIG["interval"], 16)
+            recent = candles(item["symbol"], CONFIG["interval"], 220)
+            item["chart"] = [[x["t"], x["o"], x["h"], x["l"], x["c"]] for x in recent[-64:]]
         except Exception:
             continue
         for row in recent:
@@ -219,20 +230,20 @@ def update_status(items):
                 broke_stop = (item["direction"] == "LONG" and row["l"] <= item["stop"]) or \
                              (item["direction"] == "SHORT" and row["h"] >= item["stop"])
                 if not touched and (passed_target or broke_stop):
-                    item["status"] = "EXPIRED"
+                    transition(item, "EXPIRED", row)
                     break
                 if touched:
-                    item["status"] = "ACTIVE"
+                    transition(item, "ACTIVE", row)
                     item["activated_candle"] = row["t"]
                     continue
 
             if item["status"] == "ACTIVE" and row["t"] > (item.get("activated_candle") or 0):
                 if item["direction"] == "LONG":
                     if row["l"] <= item["stop"]:
-                        item["status"], item["result_r"] = "STOP", -1
+                        transition(item, "STOP", row, -1)
                         break
                     if row["h"] >= item["target"]:
-                        item["status"], item["result_r"] = "TARGET", item["rr"]
+                        transition(item, "TARGET", row, item["rr"])
                         break
                 else:
                     if row["h"] >= item["stop"]:
