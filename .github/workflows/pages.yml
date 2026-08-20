@@ -1,5 +1,6 @@
 name: Deploy dashboard
 # Pages enabled
+# chart dashboard refresh
 on:
   workflow_dispatch:
   push:
