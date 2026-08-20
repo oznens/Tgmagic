@@ -1,4 +1,5 @@
 name: MEXC Futures Scan
+# v2 OTE state tracking
 on:
   workflow_dispatch:
   push:
