@@ -1,5 +1,25 @@
 [
   {
+    "id": "INJ_USDT:Min15:LONG:1787184900",
+    "created_at": "2026-08-20T04:10:13+00:00",
+    "symbol": "INJ_USDT",
+    "interval": "Min15",
+    "direction": "LONG",
+    "status": "PENDING",
+    "entry": 4.570855,
+    "ote_low": 4.56541,
+    "ote_high": 4.5763,
+    "stop": 4.54,
+    "target": 4.661,
+    "rr": 2.92,
+    "last_price": 4.608,
+    "bias": {
+      "Min15": "LONG",
+      "Min60": "LONG",
+      "Hour4": "LONG"
+    }
+  },
+  {
     "id": "SOXL_USDT:Min15:LONG:1787184000",
     "created_at": "2026-08-20T03:32:26+00:00",
     "symbol": "SOXL_USDT",
@@ -636,7 +656,7 @@
     "symbol": "AAPLSTOCK_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 316.85699999999997,
     "ote_low": 316.794,
     "ote_high": 316.92,
@@ -648,7 +668,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "NVIDIA_USDT:Min15:SHORT:1787166900",
@@ -1001,7 +1022,7 @@
     "symbol": "TIA_USDT",
     "interval": "Min15",
     "direction": "LONG",
-    "status": "PENDING",
+    "status": "STOP",
     "entry": 0.324735,
     "ote_low": 0.32397000000000004,
     "ote_high": 0.3255,
@@ -1013,7 +1034,8 @@
       "Min15": "LONG",
       "Min60": "LONG",
       "Hour4": "LONG"
-    }
+    },
+    "result_r": -1
   },
   {
     "id": "BTC_USDT:Min15:LONG:1787166000",
@@ -4123,27 +4145,6 @@
     "bias": {
       "Min15": "LONG",
       "Min60": "NEUTRAL",
-      "Hour4": "LONG"
-    },
-    "result_r": -1
-  },
-  {
-    "id": "SPY_USDT:Min15:SHORT:1787110200",
-    "created_at": "2026-08-19T06:59:04+00:00",
-    "symbol": "SPY_USDT",
-    "interval": "Min15",
-    "direction": "SHORT",
-    "status": "STOP",
-    "entry": 767.8932,
-    "ote_low": 767.832,
-    "ote_high": 767.9544,
-    "stop": 768.24,
-    "target": 766.88,
-    "rr": 2.92,
-    "last_price": 767.71,
-    "bias": {
-      "Min15": "SHORT",
-      "Min60": "SHORT",
       "Hour4": "LONG"
     },
     "result_r": -1
