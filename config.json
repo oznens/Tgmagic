@@ -9,5 +9,5 @@
   "scan_near_ote_percent": 0.35,
   "pivot_left": 3,
   "pivot_right": 3,
-  "max_signals": 200
+  "max_signals": 1000
 }
